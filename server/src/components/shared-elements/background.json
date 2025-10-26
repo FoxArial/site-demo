@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_shared_elements_backgrounds",
+  "info": {
+    "displayName": "Background",
+    "category": "shared-elements"
+  },
+  "options": {},
+  "attributes": {
+    "color": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

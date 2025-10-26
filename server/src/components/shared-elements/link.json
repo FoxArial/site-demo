@@ -8,23 +8,14 @@
     "href": {
       "type": "string"
     },
-    "label": {
-      "type": "string"
-    },
     "isExternal": {
       "type": "boolean",
       "default": false
     },
-    "isButton": {
-      "type": "boolean",
-      "default": false
-    },
-    "type": {
-      "type": "enumeration",
-      "enum": [
-        "PRIMARY",
-        "SECONDARY"
-      ]
+    "labelText": {
+      "type": "component",
+      "component": "shared-elements.text",
+      "repeatable": false
     }
   },
   "config": {}

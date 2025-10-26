@@ -1,6 +1,6 @@
 const BASE_URL = "http://localhost:1337/";
 
-export async function fetchData(path: string): Promise<object> {
+export async function fetchData<T>(path: string): Promise<T> {
   const url = new URL(path, BASE_URL);
 
   const response = await fetch(url.href);

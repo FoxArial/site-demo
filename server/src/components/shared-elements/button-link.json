@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_shared_elements_button_links",
+  "info": {
+    "displayName": "ButtonLink",
+    "category": "shared-elements"
+  },
+  "options": {},
+  "attributes": {
+    "href": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string"
+    },
+    "labelText": {
+      "type": "component",
+      "component": "shared-elements.text",
+      "repeatable": false
+    },
+    "theme": {
+      "type": "enumeration",
+      "enum": ["orange", "lavender", "peacoat"]
+    }
+  }
+}

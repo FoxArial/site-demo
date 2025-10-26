@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_blocks_firts_sections",
+  "info": {
+    "displayName": "Firts Section",
+    "category": "Blocks"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared-elements.button-link"
+    }
+  }
+}

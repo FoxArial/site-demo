@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_shared_elements_texts",
+  "info": {
+    "displayName": "Text"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "fontWeight": {
+      "type": "enumeration",
+      "required": true,
+      "default": "normal",
+      "enum": [
+        "normal",
+        "bold"
+      ]
+    },
+    "color": {
+      "type": "enumeration",
+      "required": true,
+      "default": "white",
+      "enum": [
+        "white",
+        "spearmint",
+        "gray",
+        "golden",
+        "jaffa",
+        "darkTeal"
+      ]
+    }
+  },
+  "config": {}
+}

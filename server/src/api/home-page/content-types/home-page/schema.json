@@ -16,11 +16,16 @@
       "component": "layout.header",
       "repeatable": false
     },
-    "title": {
-      "type": "string"
+    "footer": {
+      "type": "component",
+      "component": "layout.footer",
+      "repeatable": false
     },
-    "description": {
-      "type": "text"
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "blocks.first-section"
+      ]
     }
   }
 }
