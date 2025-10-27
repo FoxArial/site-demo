@@ -10,9 +10,6 @@
       "type": "string"
     },
     "label": {
-      "type": "string"
-    },
-    "labelText": {
       "type": "component",
       "component": "shared-elements.text",
       "repeatable": false

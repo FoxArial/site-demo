@@ -12,7 +12,7 @@
       "type": "boolean",
       "default": false
     },
-    "labelText": {
+    "label": {
       "type": "component",
       "component": "shared-elements.text",
       "repeatable": false

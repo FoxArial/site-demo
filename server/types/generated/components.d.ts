@@ -124,8 +124,7 @@ export interface SharedElementsButtonLink extends Struct.ComponentSchema {
   };
   attributes: {
     href: Schema.Attribute.String;
-    label: Schema.Attribute.String;
-    labelText: Schema.Attribute.Component<'shared-elements.text', false>;
+    label: Schema.Attribute.Component<'shared-elements.text', false>;
     theme: Schema.Attribute.Enumeration<['orange', 'lavender', 'peacoat']> &
       Schema.Attribute.DefaultTo<'orange'>;
   };
@@ -175,7 +174,7 @@ export interface SharedElementsLink extends Struct.ComponentSchema {
   attributes: {
     href: Schema.Attribute.String;
     isExternal: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
-    labelText: Schema.Attribute.Component<'shared-elements.text', false>;
+    label: Schema.Attribute.Component<'shared-elements.text', false>;
   };
 }
 
