@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_blocks_contact_us_sections",
+  "info": {
+    "displayName": "Contact Us Section"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "component",
+      "component": "shared-elements.text",
+      "repeatable": false
+    },
+    "description": {
+      "type": "component",
+      "component": "shared-elements.text",
+      "repeatable": false
+    },
+    "form": {
+      "type": "component",
+      "component": "shared-elements.form",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

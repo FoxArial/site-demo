@@ -19,7 +19,12 @@
     },
     "theme": {
       "type": "enumeration",
-      "enum": ["orange", "lavender", "peacoat"]
+      "default": "orange",
+      "enum": [
+        "orange",
+        "lavender",
+        "peacoat"
+      ]
     }
   }
 }

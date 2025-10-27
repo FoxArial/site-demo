@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_shared_elements_techno_cards",
+  "info": {
+    "displayName": "TechnoCard"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "description": {
+      "type": "component",
+      "component": "shared-elements.text",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

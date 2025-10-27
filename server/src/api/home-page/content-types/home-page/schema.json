@@ -16,16 +16,20 @@
       "component": "layout.header",
       "repeatable": false
     },
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "blocks.first-section",
+        "blocks.technologies-section",
+        "blocks.services-section",
+        "blocks.portfolio-section",
+        "blocks.contact-us-section"
+      ]
+    },
     "footer": {
       "type": "component",
       "component": "layout.footer",
       "repeatable": false
-    },
-    "content": {
-      "type": "dynamiczone",
-      "components": [
-        "blocks.first-section"
-      ]
     }
   }
 }

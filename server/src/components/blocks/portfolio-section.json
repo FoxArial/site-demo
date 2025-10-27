@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_blocks_portfolio_sections",
+  "info": {
+    "displayName": "Portfolio Section"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "component",
+      "component": "shared-elements.text",
+      "repeatable": false
+    },
+    "description": {
+      "type": "component",
+      "component": "shared-elements.text",
+      "repeatable": false
+    },
+    "portfolio_categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::portfolio-category.portfolio-category"
+    },
+    "projects": {
+      "type": "component",
+      "component": "shared-elements.portfolio-card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

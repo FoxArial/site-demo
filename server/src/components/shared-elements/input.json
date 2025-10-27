@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_shared_elements_inputs",
+  "info": {
+    "displayName": "Input"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "component",
+      "component": "shared-elements.text",
+      "repeatable": false,
+      "required": true
+    },
+    "placeholder": {
+      "type": "component",
+      "component": "shared-elements.text",
+      "repeatable": false,
+      "required": true
+    }
+  },
+  "config": {}
+}

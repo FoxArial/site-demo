@@ -12,7 +12,17 @@
     "image": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "standartColors": {
+      "type": "enumeration",
+      "default": "white",
+      "enum": [
+        "white",
+        "whiteSmoke"
+      ]
     }
   }
 }

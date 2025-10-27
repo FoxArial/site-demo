@@ -19,6 +19,11 @@
       "type": "component",
       "component": "shared-elements.link",
       "repeatable": false
+    },
+    "background": {
+      "type": "component",
+      "component": "shared-elements.background",
+      "repeatable": false
     }
   },
   "config": {}

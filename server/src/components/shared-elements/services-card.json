@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_shared_elements_services_cards",
+  "info": {
+    "displayName": "ServicesCard"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "title": {
+      "type": "component",
+      "component": "shared-elements.text",
+      "repeatable": false
+    },
+    "description": {
+      "type": "component",
+      "component": "shared-elements.text",
+      "repeatable": false
+    },
+    "button": {
+      "type": "component",
+      "component": "shared-elements.button-link",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

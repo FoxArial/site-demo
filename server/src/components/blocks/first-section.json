@@ -6,16 +6,20 @@
   },
   "options": {},
   "attributes": {
-    "heading": {
-      "type": "string"
-    },
-    "description": {
-      "type": "text"
+    "title": {
+      "type": "component",
+      "component": "shared-elements.text",
+      "repeatable": true
     },
     "cta": {
       "type": "component",
-      "repeatable": true,
-      "component": "shared-elements.button-link"
+      "component": "shared-elements.button-link",
+      "repeatable": true
+    },
+    "background": {
+      "type": "component",
+      "component": "shared-elements.background",
+      "repeatable": false
     }
   }
 }

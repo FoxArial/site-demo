@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_shared_elements_forms",
+  "info": {
+    "displayName": "Form"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "component",
+      "component": "shared-elements.text",
+      "repeatable": false
+    },
+    "description": {
+      "type": "component",
+      "component": "shared-elements.text",
+      "repeatable": false
+    },
+    "inputs": {
+      "type": "component",
+      "component": "shared-elements.input",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}
