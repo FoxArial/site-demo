@@ -6,7 +6,9 @@
   "options": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "component",
+      "component": "shared-elements.text",
+      "repeatable": false
     },
     "links": {
       "type": "component",

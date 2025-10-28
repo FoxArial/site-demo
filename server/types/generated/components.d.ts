@@ -77,7 +77,7 @@ export interface LayoutFooter extends Struct.ComponentSchema {
     displayName: 'Footer';
   };
   attributes: {
-    description: Schema.Attribute.String;
+    description: Schema.Attribute.Component<'shared-elements.text', false>;
     infoColumns: Schema.Attribute.Component<
       'shared-elements.menu-column',
       true
@@ -85,7 +85,7 @@ export interface LayoutFooter extends Struct.ComponentSchema {
     links: Schema.Attribute.Component<'shared-elements.link', true>;
     logo: Schema.Attribute.Component<'shared-elements.logo', false>;
     socialLogos: Schema.Attribute.Component<'shared-elements.logo', true>;
-    text: Schema.Attribute.Text;
+    text: Schema.Attribute.Component<'shared-elements.text', false>;
   };
 }
 
@@ -96,7 +96,7 @@ export interface LayoutHeader extends Struct.ComponentSchema {
   };
   attributes: {
     background: Schema.Attribute.Component<'shared-elements.background', false>;
-    cta: Schema.Attribute.Component<'shared-elements.link', false>;
+    cta: Schema.Attribute.Component<'shared-elements.button-link', false>;
     logo: Schema.Attribute.Component<'shared-elements.logo', false>;
     navItems: Schema.Attribute.Component<'shared-elements.link', true>;
   };
@@ -123,9 +123,14 @@ export interface SharedElementsButtonLink extends Struct.ComponentSchema {
     displayName: 'ButtonLink';
   };
   attributes: {
-    href: Schema.Attribute.String;
-    label: Schema.Attribute.Component<'shared-elements.text', false>;
+    href: Schema.Attribute.String & Schema.Attribute.Required;
+    isExternal: Schema.Attribute.Boolean &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<false>;
+    label: Schema.Attribute.Component<'shared-elements.text', false> &
+      Schema.Attribute.Required;
     theme: Schema.Attribute.Enumeration<['orange', 'lavender', 'peacoat']> &
+      Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<'orange'>;
   };
 }
@@ -172,9 +177,12 @@ export interface SharedElementsLink extends Struct.ComponentSchema {
     displayName: 'Link';
   };
   attributes: {
-    href: Schema.Attribute.String;
-    isExternal: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
-    label: Schema.Attribute.Component<'shared-elements.text', false>;
+    href: Schema.Attribute.String & Schema.Attribute.Required;
+    isExternal: Schema.Attribute.Boolean &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<false>;
+    label: Schema.Attribute.Component<'shared-elements.text', false> &
+      Schema.Attribute.Required;
   };
 }
 
@@ -184,10 +192,13 @@ export interface SharedElementsLogo extends Struct.ComponentSchema {
     displayName: 'Logo';
   };
   attributes: {
-    href: Schema.Attribute.String;
+    href: Schema.Attribute.String & Schema.Attribute.Required;
     image: Schema.Attribute.Media<'images'>;
-    isExternal: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
-    label: Schema.Attribute.String;
+    isExternal: Schema.Attribute.Boolean &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<false>;
+    label: Schema.Attribute.Component<'shared-elements.text', false> &
+      Schema.Attribute.Required;
   };
 }
 
@@ -198,7 +209,7 @@ export interface SharedElementsMenuColumn extends Struct.ComponentSchema {
   };
   attributes: {
     links: Schema.Attribute.Component<'shared-elements.link', true>;
-    title: Schema.Attribute.String;
+    title: Schema.Attribute.Component<'shared-elements.text', false>;
   };
 }
 
@@ -257,7 +268,7 @@ export interface SharedElementsText extends Struct.ComponentSchema {
     fontWeight: Schema.Attribute.Enumeration<['normal', 'bold']> &
       Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<'normal'>;
-    label: Schema.Attribute.String;
+    label: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }
 

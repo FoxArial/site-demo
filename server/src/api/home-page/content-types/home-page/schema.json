@@ -11,11 +11,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "header": {
-      "type": "component",
-      "component": "layout.header",
-      "repeatable": false
-    },
     "content": {
       "type": "dynamiczone",
       "components": [
@@ -25,11 +20,6 @@
         "blocks.portfolio-section",
         "blocks.contact-us-section"
       ]
-    },
-    "footer": {
-      "type": "component",
-      "component": "layout.footer",
-      "repeatable": false
     }
   }
 }

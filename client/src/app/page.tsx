@@ -1,6 +1,6 @@
-import { getHomePage } from "../services/fetchPages";
+import { getGlobalElements } from "../services/fetchPages";
 export default async function HomeRoute() {
-  const data = await getHomePage();
+  const data = await getGlobalElements();
   console.log(data);
   return <div></div>;
 }

@@ -1,13 +1,11 @@
-const BASE_URL = "http://localhost:1337/";
-
+function getStrapiURL(): string {
+  return process.env.NEXT_PUBLIC_STRAPI_API_URL ?? "http://localhost:1337";
+}
+const BASE_URL = getStrapiURL();
 export async function fetchData<T>(path: string): Promise<T> {
-  const url = new URL(path, BASE_URL);
-
-  const response = await fetch(url.href);
+  const response = await fetch(BASE_URL + path);
   if (!response.ok) {
-    throw new Error(`Error fetching ${path}: ${response.status}`);
+    throw new Error(`Failed to fetch ${path}: ${response.status}`);
   }
-
-  const data = await response.json();
-  return { ...data.data };
+  return await response.json();
 }

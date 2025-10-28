@@ -6,13 +6,18 @@
   "options": {},
   "attributes": {
     "href": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "label": {
-      "type": "string"
+      "type": "component",
+      "component": "shared-elements.text",
+      "repeatable": false,
+      "required": true
     },
     "isExternal": {
       "type": "boolean",
+      "required": true,
       "default": false
     },
     "image": {

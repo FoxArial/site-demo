@@ -17,7 +17,7 @@
     },
     "cta": {
       "type": "component",
-      "component": "shared-elements.link",
+      "component": "shared-elements.button-link",
       "repeatable": false
     },
     "background": {

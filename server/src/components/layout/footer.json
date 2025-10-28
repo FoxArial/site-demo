@@ -16,7 +16,9 @@
       "repeatable": false
     },
     "description": {
-      "type": "string"
+      "type": "component",
+      "component": "shared-elements.text",
+      "repeatable": false
     },
     "socialLogos": {
       "type": "component",
@@ -29,7 +31,9 @@
       "repeatable": true
     },
     "text": {
-      "type": "text"
+      "type": "component",
+      "component": "shared-elements.text",
+      "repeatable": false
     }
   },
   "config": {}

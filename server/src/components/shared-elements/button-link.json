@@ -7,21 +7,29 @@
   "options": {},
   "attributes": {
     "href": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "label": {
       "type": "component",
       "component": "shared-elements.text",
-      "repeatable": false
+      "repeatable": false,
+      "required": true
     },
     "theme": {
       "type": "enumeration",
+      "required": true,
       "default": "orange",
       "enum": [
         "orange",
         "lavender",
         "peacoat"
       ]
+    },
+    "isExternal": {
+      "type": "boolean",
+      "required": true,
+      "default": false
     }
   }
 }
