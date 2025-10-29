@@ -12,7 +12,7 @@
     },
     "description": {
       "type": "component",
-      "component": "shared-elements.text",
+      "component": "shared-elements.long-text",
       "repeatable": false
     },
     "services": {

@@ -1,4 +1,4 @@
-import { LinkItem, TextLabel, ImageData } from "./GlobalElements";
+import { LinkItem, TextLabel, ImageData, Logo } from "./GlobalElements";
 
 export interface InfoColumn {
   id: number;
@@ -10,14 +10,14 @@ export interface SocialLogo {
   id: number;
   href: string;
   isExternal: boolean;
-  title?: TextLabel | null;
+  label: TextLabel;
   image?: ImageData;
 }
 
 export interface Footer {
   id: number;
   infoColumns: InfoColumn[];
-  logo: LinkItem;
+  logo: Logo;
   description: TextLabel;
   socialLogos: SocialLogo[];
   links: LinkItem[];

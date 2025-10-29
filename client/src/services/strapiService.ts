@@ -1,5 +1,5 @@
-function getStrapiURL(): string {
-  return process.env.NEXT_PUBLIC_STRAPI_API_URL ?? "http://localhost:1337";
+export function getStrapiURL(): string {
+  return process.env.NEXT_PUBLIC_STRAPI_URL ?? "http://localhost:1337";
 }
 const BASE_URL = getStrapiURL();
 export async function fetchData<T>(path: string): Promise<T> {

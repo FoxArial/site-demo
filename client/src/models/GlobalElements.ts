@@ -69,3 +69,14 @@ export interface Background {
   image?: ImageData;
   standartColors?: "white" | "whiteSmoke";
 }
+
+export interface InputElement {
+  label: TextLabel;
+  placeholder: TextLabel;
+}
+
+export interface FormElement {
+  title: TextLabel;
+  description: TextLabel;
+  inputs: InputElement[];
+}

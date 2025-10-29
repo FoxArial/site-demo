@@ -1,7 +1,7 @@
 {
   "collectionName": "components_blocks_firts_sections",
   "info": {
-    "displayName": "Firts Section",
+    "displayName": "Hero Section",
     "category": "Blocks"
   },
   "options": {},
@@ -15,6 +15,11 @@
       "type": "component",
       "component": "shared-elements.button-link",
       "repeatable": true
+    },
+    "description": {
+      "type": "component",
+      "component": "shared-elements.long-text",
+      "repeatable": false
     },
     "background": {
       "type": "component",

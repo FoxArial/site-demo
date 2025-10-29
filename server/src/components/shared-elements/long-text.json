@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_shared_elements_long_texts",
+  "info": {
+    "displayName": "LongText"
+  },
+  "options": {},
+  "attributes": {
+    "longText": {
+      "type": "text",
+      "required": true
+    },
+    "fontWeight": {
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "normal",
+        "bold"
+      ]
+    },
+    "color": {
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "white",
+        "spearmint",
+        "gray",
+        "golden",
+        "jaffa",
+        "darkTeal"
+      ]
+    }
+  },
+  "config": {}
+}

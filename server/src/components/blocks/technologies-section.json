@@ -8,11 +8,11 @@
     "title": {
       "type": "component",
       "component": "shared-elements.text",
-      "repeatable": false
+      "repeatable": true
     },
     "description": {
       "type": "component",
-      "component": "shared-elements.text",
+      "component": "shared-elements.long-text",
       "repeatable": false
     },
     "technologies": {

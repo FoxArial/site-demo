@@ -16,11 +16,12 @@ export interface BlocksFirstSection extends Struct.ComponentSchema {
   collectionName: 'components_blocks_firts_sections';
   info: {
     category: 'Blocks';
-    displayName: 'Firts Section';
+    displayName: 'Hero Section';
   };
   attributes: {
     background: Schema.Attribute.Component<'shared-elements.background', false>;
     cta: Schema.Attribute.Component<'shared-elements.button-link', true>;
+    description: Schema.Attribute.Component<'shared-elements.long-text', false>;
     title: Schema.Attribute.Component<'shared-elements.text', true>;
   };
 }
@@ -31,7 +32,7 @@ export interface BlocksPortfolioSection extends Struct.ComponentSchema {
     displayName: 'Portfolio Section';
   };
   attributes: {
-    description: Schema.Attribute.Component<'shared-elements.text', false>;
+    description: Schema.Attribute.Component<'shared-elements.long-text', false>;
     portfolio_categories: Schema.Attribute.Relation<
       'oneToMany',
       'api::portfolio-category.portfolio-category'
@@ -50,7 +51,7 @@ export interface BlocksServicesSection extends Struct.ComponentSchema {
     displayName: 'Services Section';
   };
   attributes: {
-    description: Schema.Attribute.Component<'shared-elements.text', false>;
+    description: Schema.Attribute.Component<'shared-elements.long-text', false>;
     services: Schema.Attribute.Component<'shared-elements.services-card', true>;
     title: Schema.Attribute.Component<'shared-elements.text', false>;
   };
@@ -62,12 +63,12 @@ export interface BlocksTechnologiesSection extends Struct.ComponentSchema {
     displayName: 'Technologies Section';
   };
   attributes: {
-    description: Schema.Attribute.Component<'shared-elements.text', false>;
+    description: Schema.Attribute.Component<'shared-elements.long-text', false>;
     technologies: Schema.Attribute.Component<
       'shared-elements.techno-card',
       true
     >;
-    title: Schema.Attribute.Component<'shared-elements.text', false>;
+    title: Schema.Attribute.Component<'shared-elements.text', true>;
   };
 }
 
@@ -202,6 +203,22 @@ export interface SharedElementsLogo extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedElementsLongText extends Struct.ComponentSchema {
+  collectionName: 'components_shared_elements_long_texts';
+  info: {
+    displayName: 'LongText';
+  };
+  attributes: {
+    color: Schema.Attribute.Enumeration<
+      ['white', 'spearmint', 'gray', 'golden', 'jaffa', 'darkTeal']
+    > &
+      Schema.Attribute.Required;
+    fontWeight: Schema.Attribute.Enumeration<['normal', 'bold']> &
+      Schema.Attribute.Required;
+    longText: Schema.Attribute.Text & Schema.Attribute.Required;
+  };
+}
+
 export interface SharedElementsMenuColumn extends Struct.ComponentSchema {
   collectionName: 'components_shared_elements_menu_columns';
   info: {
@@ -289,6 +306,7 @@ declare module '@strapi/strapi' {
       'shared-elements.input': SharedElementsInput;
       'shared-elements.link': SharedElementsLink;
       'shared-elements.logo': SharedElementsLogo;
+      'shared-elements.long-text': SharedElementsLongText;
       'shared-elements.menu-column': SharedElementsMenuColumn;
       'shared-elements.portfolio-card': SharedElementsPortfolioCard;
       'shared-elements.services-card': SharedElementsServicesCard;
