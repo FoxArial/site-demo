@@ -13,9 +13,21 @@ $jaffa: #e76e44;
 $darkTeal: #0f2f3f;
 
 //fontSize
-$bigTitle: 40px;
-$title: 28px;
-$smallTitle: 20px;
-$main: 16px;
-$small: 14px;
-$Tiny: 12px;
+$base-font-size: 16;
+
+@function rem($px) {
+  @return ($px / $base-font-size) * 1rem;
+}
+
+@function fluid($min, $max) {
+  $min-rem: rem($min);
+  $max-rem: rem($max);
+  @return clamp(#{$min-rem}, #{calc(8vw - 0.1rem)}, #{$max-rem});
+}
+
+$bigTitle: fluid(32, 40);
+$title: fluid(22, 28);
+$smallTitle: fluid(18, 20);
+$main: fluid(15, 16);
+$small: fluid(13, 14);
+$tiny: fluid(11, 12);

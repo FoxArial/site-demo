@@ -1,5 +1,30 @@
+@import "./constants.scss";
+@import "./typography.scss";
+@import "./themes.scss";
+
+@import "./global/header.scss";
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  a {
+    text-decoration: none;
+  }
+  ul {
+    list-style: none;
+  }
+}
+.main-format {
+  padding: 1rem 1.1rem;
+}
+
+.button-style {
+  width: auto;
+  height: 2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

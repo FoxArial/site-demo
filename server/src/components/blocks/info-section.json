@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_blocks_info_sections",
+  "info": {
+    "displayName": "Info Section"
+  },
+  "options": {},
+  "attributes": {
+    "card": {
+      "type": "component",
+      "component": "shared-elements.info-card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,49 @@
+@import "./constants.scss";
+
+.text-white {
+  color: $white;
+}
+.text-whiteSmoke {
+  color: $whiteSmoke;
+}
+.text-spearmint {
+  color: $spearmint;
+}
+.text-gray {
+  color: $gray;
+}
+.text-golden {
+  color: $golden;
+}
+.text-jaffa {
+  color: $jaffa;
+}
+.text-darkTeal {
+  color: $darkTeal;
+}
+
+.textWeight-bold {
+  font-weight: 700;
+}
+.textWeight-normal {
+  font-weight: 400;
+}
+
+.text-bigTitle {
+  font-size: $bigTitle;
+}
+.text-title {
+  font-size: $title;
+}
+.text-smallTitle {
+  font-size: $smallTitle;
+}
+.text-main {
+  font-size: $main;
+}
+.text-small {
+  font-size: $small;
+}
+.text-tiny {
+  font-size: $tiny;
+}

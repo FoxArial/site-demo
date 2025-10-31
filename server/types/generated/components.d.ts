@@ -26,6 +26,16 @@ export interface BlocksFirstSection extends Struct.ComponentSchema {
   };
 }
 
+export interface BlocksInfoSection extends Struct.ComponentSchema {
+  collectionName: 'components_blocks_info_sections';
+  info: {
+    displayName: 'Info Section';
+  };
+  attributes: {
+    card: Schema.Attribute.Component<'shared-elements.info-card', true>;
+  };
+}
+
 export interface BlocksPortfolioSection extends Struct.ComponentSchema {
   collectionName: 'components_blocks_portfolio_sections';
   info: {
@@ -294,6 +304,7 @@ declare module '@strapi/strapi' {
     export interface ComponentSchemas {
       'blocks.contact-us-section': BlocksContactUsSection;
       'blocks.first-section': BlocksFirstSection;
+      'blocks.info-section': BlocksInfoSection;
       'blocks.portfolio-section': BlocksPortfolioSection;
       'blocks.services-section': BlocksServicesSection;
       'blocks.technologies-section': BlocksTechnologiesSection;

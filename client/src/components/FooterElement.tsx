@@ -6,7 +6,7 @@ import { StrapiImage } from "./custom/strapa-image";
 
 export default async function FooterElement() {
   const footer = await selectData<Footer>("footer");
-  if (!footer) return <div>Header not found</div>;
+  if (!footer) return <div>Footer not found</div>;
 
   return (
     <footer>
