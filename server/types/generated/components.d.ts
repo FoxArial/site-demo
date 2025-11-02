@@ -225,7 +225,7 @@ export interface SharedElementsLongText extends Struct.ComponentSchema {
       Schema.Attribute.Required;
     fontWeight: Schema.Attribute.Enumeration<['normal', 'bold']> &
       Schema.Attribute.Required;
-    longText: Schema.Attribute.Text & Schema.Attribute.Required;
+    label: Schema.Attribute.Text & Schema.Attribute.Required;
   };
 }
 

@@ -13,7 +13,6 @@ export function Logo({ header, footer, className }: LogoProps) {
   if (!logo.image) {
     return (
       <Link href={logo.href} className={className}>
-        {" "}
         {logo.label?.label}
       </Link>
     );

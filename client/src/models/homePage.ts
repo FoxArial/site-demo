@@ -36,16 +36,16 @@ type ContentBlock =
   | ContactUsSectionProps;
 
 export interface HeroSectionProps {
-  __component: string;
+  __component: "blocks.first-section";
   id: number;
-  title: TextLabel;
-  cta: ButtonLink;
+  title: TextLabel[];
+  cta: ButtonLink[];
   description: TextLabel;
   background: Background;
 }
 
 export interface TechnologiesSectionProps {
-  __component: string;
+  __component: "blocks.technologies-section";
   id: number;
   title: TextLabel;
   description: TextLabel;
@@ -53,7 +53,7 @@ export interface TechnologiesSectionProps {
 }
 
 export interface ServicesSectionProps {
-  __component: string;
+  __component: "blocks.services-section";
   id: number;
   title: TextLabel;
   description: TextLabel;
@@ -61,7 +61,7 @@ export interface ServicesSectionProps {
 }
 
 export interface PortfolioSectionProps {
-  __component: string;
+  __component: "blocks.portfolio-section";
   id: number;
   title: TextLabel;
   description: TextLabel;
@@ -69,7 +69,7 @@ export interface PortfolioSectionProps {
 }
 
 export interface ContactUsSectionProps {
-  __component: string;
+  __component: "blocks.contact-us-section";
   id: number;
   title: TextLabel;
   description: TextLabel;

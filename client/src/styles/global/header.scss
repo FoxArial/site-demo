@@ -4,3 +4,19 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.header-right-part {
+  width: 60%;
+}
+
+.navigation-list {
+  height: 100%;
+}
+
+.active-nav {
+  background-color: $white;
+  width: 1.5rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+}

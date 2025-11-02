@@ -3,7 +3,7 @@ import Link from "next/link";
 type ButtonProps = {
   theme: string;
   href: string;
-  color: string;
+  text: string;
   weight: string;
   width: string;
   label: string;
@@ -12,14 +12,14 @@ type ButtonProps = {
 export default function ButtonCustom({
   theme,
   href,
-  color,
+  text,
   weight,
   width,
   label,
 }: ButtonProps) {
   return (
-    <div className={`${theme} button-style`} style={{ width: width }}>
-      <Link href={href} className={`${color} ${weight}`}>
+    <div className={`button-${theme} button-style`} style={{ width: width }}>
+      <Link href={href} className={`text-${text} textWeight-${weight}`}>
         {label}
       </Link>
     </div>

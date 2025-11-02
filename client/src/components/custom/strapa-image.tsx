@@ -3,7 +3,7 @@ import Image from "next/image";
 
 interface IStrapiMediaProps {
   src: string;
-  alt: string | null;
+  alt?: string | null;
   height?: number;
   width?: number;
   className?: string;
