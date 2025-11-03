@@ -1,6 +1,7 @@
 import {
   ContactUsSectionProps,
   HeroSectionProps,
+  InfoSectionProps,
   PortfolioSectionProps,
   ServicesSectionProps,
   TechnologiesSectionProps,
@@ -11,11 +12,13 @@ import { HeroSection } from "./HeroSection";
 import { PortfolioSection } from "./PortfolioSection";
 import { ServicesSection } from "./ServicesSection";
 import { TechnologiesSection } from "./TechnologiesSection";
+import { InfoSection } from "./InfoSection";
 
 export type BlockMapProps =
   | ({ __component: "blocks.first-section" } & HeroSectionProps)
   | ({ __component: "blocks.technologies-section" } & TechnologiesSectionProps)
   | ({ __component: "blocks.services-section" } & ServicesSectionProps)
+  | ({ __component: "blocks.info-section" } & InfoSectionProps)
   | ({ __component: "blocks.portfolio-section" } & PortfolioSectionProps)
   | ({ __component: "blocks.contact-us-section" } & ContactUsSectionProps);
 
@@ -29,6 +32,9 @@ export function RenderBlock(block: BlockMapProps) {
 
     case "blocks.services-section":
       return <ServicesSection key={block.id} {...block} />;
+
+    case "blocks.info-section":
+      return <InfoSection key={block.id} {...block} />;
 
     case "blocks.portfolio-section":
       return <PortfolioSection key={block.id} {...block} />;

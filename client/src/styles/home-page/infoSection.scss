@@ -1,0 +1,17 @@
+.info-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.info-container {
+  width: 95%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.info-bg {
+  top: -150;
+}

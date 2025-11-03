@@ -9,6 +9,11 @@
       "type": "component",
       "component": "shared-elements.info-card",
       "repeatable": true
+    },
+    "background": {
+      "type": "component",
+      "component": "shared-elements.background",
+      "repeatable": false
     }
   },
   "config": {}

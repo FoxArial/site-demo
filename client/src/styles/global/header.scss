@@ -9,8 +9,8 @@
   width: 60%;
 }
 
-.navigation-list {
-  height: 100%;
+.padding-header {
+  padding: 1rem 1.1rem 0 1.1rem;
 }
 
 .active-nav {
@@ -19,4 +19,14 @@
   height: 3rem;
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
+  &:hover {
+    background-color: $orange;
+    color: $white;
+  }
+}
+
+.nav-link {
+  &:hover {
+    color: $golden;
+  }
 }

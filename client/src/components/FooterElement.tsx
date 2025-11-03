@@ -8,17 +8,27 @@ export default async function FooterElement() {
   const footer = await selectData<Footer>("footer");
   if (!footer) return <div>Footer not found</div>;
 
+  const { description, infoColumns, links, logo, socialLogos, text } = footer;
   return (
-    <footer>
+    <footer className="main-side-padding">
       <div className="topFooter">
-        {footer.infoColumns.map((item) => (
+        {infoColumns.map((item) => (
           <div key={item.id}>
-            <h3>{item.title.label}</h3>
+            <p
+              className={`text-${item.title.color} textWeight-${item.title.fontWeight} text-smallTitle`}
+            >
+              {item.title.label}
+            </p>
 
             {item.links.map((element) => (
               <ul key={element.id}>
                 <li>
-                  <Link href={element.href}>{element.label?.label}</Link>
+                  <Link
+                    href={element.href}
+                    className={`text-${element.label?.color} textWeight-${element.label?.fontWeight} text-normal`}
+                  >
+                    {element.label?.label}
+                  </Link>
                 </li>
               </ul>
             ))}
@@ -26,11 +36,18 @@ export default async function FooterElement() {
         ))}
       </div>
       <div className="middleFooter">
-        <Logo footer={footer} />
+        <Logo
+          footer={footer}
+          className={`text-${logo.label?.color} textWeight-${logo.label?.fontWeight} text-title`}
+        />
         <div className="social">
-          <p> {footer.description.label}</p>
+          <p
+            className={`text-${description.color} textWeight-${description.fontWeight} text-normal`}
+          >
+            {description.label}
+          </p>
           <ul>
-            {footer.socialLogos.map((element) => (
+            {socialLogos.map((element) => (
               <li key={element.id}>
                 <Link href={element.href}>
                   {element.image?.url ? (
@@ -51,14 +68,22 @@ export default async function FooterElement() {
       </div>
       <div className="bottomFooter">
         <ul>
-          {footer.links.map((item) => (
-            <Link key={item.id} href={item.href}>
+          {links.map((item) => (
+            <Link
+              key={item.id}
+              href={item.href}
+              className={`text-${item.label?.color} textWeight-${item.label?.fontWeight} text-smallTitle`}
+            >
               {item.label?.label}
             </Link>
           ))}
         </ul>
       </div>
-      <p>{footer.text.label}</p>
+      <p
+        className={`text-${text.color} textWeight-${text.fontWeight} text-normall`}
+      >
+        {text.label}
+      </p>
     </footer>
   );
 }

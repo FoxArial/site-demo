@@ -4,20 +4,27 @@ import {
   FormElement,
   LinkItem,
   TextLabel,
+  ImageData,
 } from "./GlobalElements";
 
-interface TechnoCard {
+export interface TechnoCard {
   id: number;
   image: ImageData;
   description: TextLabel;
 }
 
-interface ServiceCard {
+export interface ServiceCard {
   id: number;
   image: ImageData;
   title: TextLabel;
   description: TextLabel;
   button: ButtonLink;
+}
+
+interface InfoCard {
+  id: number;
+  title: TextLabel;
+  description: TextLabel;
 }
 
 interface PortfolioCard {
@@ -47,7 +54,7 @@ export interface HeroSectionProps {
 export interface TechnologiesSectionProps {
   __component: "blocks.technologies-section";
   id: number;
-  title: TextLabel;
+  title: TextLabel[];
   description: TextLabel;
   technologies: TechnoCard[];
 }
@@ -58,6 +65,13 @@ export interface ServicesSectionProps {
   title: TextLabel;
   description: TextLabel;
   services: ServiceCard[];
+}
+
+export interface InfoSectionProps {
+  __component: "blocks.info-section";
+  id: number;
+  card: InfoCard[];
+  background: Background;
 }
 
 export interface PortfolioSectionProps {

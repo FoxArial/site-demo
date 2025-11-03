@@ -1,0 +1,21 @@
+.techno-section {
+  min-height: 50vh;
+  flex-direction: column;
+}
+
+.icon-techno {
+  height: 50px;
+  width: 50px;
+}
+
+.card {
+  flex-direction: column;
+  flex: 0 0 5.5em;
+}
+
+.card-image {
+  height: 70px;
+  width: 70px;
+  object-fit: cover;
+  border-radius: 1rem;
+}

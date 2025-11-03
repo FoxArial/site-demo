@@ -4,8 +4,8 @@ import Image from "next/image";
 interface IStrapiMediaProps {
   src: string;
   alt?: string | null;
-  height?: number;
-  width?: number;
+  height?: number | `${number}`;
+  width?: number | `${number}`;
   className?: string;
   fill?: boolean;
   priority?: boolean;

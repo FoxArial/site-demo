@@ -508,6 +508,7 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
         'blocks.services-section',
         'blocks.portfolio-section',
         'blocks.contact-us-section',
+        'blocks.info-section',
       ]
     >;
     createdAt: Schema.Attribute.DateTime;

@@ -32,6 +32,7 @@ export interface BlocksInfoSection extends Struct.ComponentSchema {
     displayName: 'Info Section';
   };
   attributes: {
+    background: Schema.Attribute.Component<'shared-elements.background', false>;
     card: Schema.Attribute.Component<'shared-elements.info-card', true>;
   };
 }

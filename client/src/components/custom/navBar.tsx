@@ -21,11 +21,11 @@ export default function Navbar({ navItems }: NavbarProps) {
             <li key={item.id}>
               <Link
                 href={item.href}
-                className={
+                className={`${
                   isActive
                     ? "textWeight-bold text-darkTeal active-nav"
-                    : `text-${item.label?.color} textWeight-${item.label?.fontWeight}`
-                }
+                    : `text-${item.label?.color} textWeight-${item.label?.fontWeight} nav-link`
+                }`}
               >
                 {item.label?.label}
               </Link>

@@ -18,7 +18,8 @@
         "blocks.technologies-section",
         "blocks.services-section",
         "blocks.portfolio-section",
-        "blocks.contact-us-section"
+        "blocks.contact-us-section",
+        "blocks.info-section"
       ]
     }
   }

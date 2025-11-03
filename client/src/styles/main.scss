@@ -5,6 +5,9 @@
 @import "./global/header.scss";
 
 @import "./home-page/heroSection.scss";
+@import "./home-page/technologiesSection.scss";
+@import "./home-page/servicesSection.scss";
+@import "./home-page/infoSection.scss";
 
 * {
   margin: 0;
@@ -18,30 +21,29 @@
     list-style: none;
   }
 }
-.main-padding {
-  padding: 1rem 1.1rem;
+
+.main-side-padding {
+  padding: 0 1.1rem;
+}
+
+.main-horizontal-padding {
+  padding: 4.5rem 0;
+}
+
+.width-70 {
+  width: 70%;
 }
 
 .flex-central {
   display: flex;
   align-items: center;
   text-align: center;
-}
-
-.full-sc {
-  min-height: 85vh;
-  width: 100%;
-  flex-direction: column;
-  display: flex;
-  align-items: center;
   justify-content: center;
 }
 
 .title {
   display: flex;
   flex-direction: column;
-  gap: clamp(1rem, calc(5vh - 0.5rem), 2rem);
-  width: 70%;
 }
 
 .title-cta {
@@ -62,4 +64,37 @@
   align-items: center;
   justify-content: center;
   padding: 0.5rem 1rem;
+  &:hover {
+    background-color: $spearmint;
+  }
+}
+
+.gap-between {
+  gap: clamp(1rem, calc(5vh - 0.5rem), 2rem);
+}
+
+.gap-between-big {
+  gap: clamp(1.5rem, calc(8vh - 0.5rem), 3.5rem);
+}
+
+.scroller {
+  max-width: 70%;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+
+.scroller-inner {
+  display: flex;
+  flex-direction: row;
+  width: max-content;
+  //animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-50%);
+  }
 }

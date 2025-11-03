@@ -5,8 +5,8 @@ import ButtonCustom from "../custom/cta";
 export function HeroSection(block: HeroSectionProps) {
   const { title, description, background, cta } = block;
   return (
-    <div className="full-sc flex-central main-padding">
-      <div className="title">
+    <div className="flex-central hero-section">
+      <div className="title gap-between width-70">
         <div className="title-header">
           {title.map((item) => (
             <p
@@ -19,7 +19,7 @@ export function HeroSection(block: HeroSectionProps) {
         </div>
         <div className="title-description">
           <p
-            className={`text-${description.color} textWeight-${description.fontWeight} text-title `}
+            className={`text-${description.color} textWeight-${description.fontWeight} smallTitle `}
           >
             {description.label}
           </p>

@@ -30,6 +30,7 @@ const populate = {
           description: true,
           technologies: {
             populate: {
+              description: true,
               image: {
                 fields: ["url"],
               },
@@ -64,6 +65,13 @@ const populate = {
             populate: {
               title: true,
               description: true,
+            },
+          },
+          background: {
+            populate: {
+              image: {
+                fields: ["url"],
+              },
             },
           },
         },
