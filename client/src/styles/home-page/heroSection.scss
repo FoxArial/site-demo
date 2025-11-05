@@ -2,13 +2,6 @@
   min-height: 87vh;
   width: 100%;
   flex-direction: column;
-}
-
-.bg-full-screen {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  width: 100%;
-  min-height: 100vh;
   overflow: hidden;
+  padding: 2rem 0;
 }

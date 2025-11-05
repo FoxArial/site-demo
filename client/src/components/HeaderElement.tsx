@@ -1,7 +1,6 @@
 import { Header } from "@/models/Header";
 import { selectData } from "@/utils/globalElementSelection";
 import { Logo } from "@/utils/logoValidation";
-import ButtonCustom from "./custom/cta";
 import Navbar from "./custom/navBar";
 
 export default async function HeaderElement() {
@@ -14,17 +13,7 @@ export default async function HeaderElement() {
         header={header}
         className={`text-${logo.label?.color} textWeight-${logo.label?.fontWeight} text-bigTitle`}
       />
-      <div className="header-right-part header-style">
-        <Navbar navItems={navItems} />
-        <ButtonCustom
-          href={cta.href}
-          label={cta.label.label}
-          theme={cta.theme}
-          text={cta.label.color}
-          weight={cta.label.fontWeight}
-          width="12rem"
-        />
-      </div>
+      <Navbar navItems={navItems} cta={cta} />
     </header>
   );
 }

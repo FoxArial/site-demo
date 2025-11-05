@@ -25,12 +25,10 @@ export function InfoSection(block: InfoSectionProps) {
           </div>
         ))}
       </div>
-      {background.image ? (
-        <div className="bg-full-screen info-bg">
-          <StrapiImage src={background.image?.url} fill={true} />
+      {background.image && (
+        <div className="info-bg">
+          <StrapiImage src={background.image.url} fill={true} />
         </div>
-      ) : (
-        "No data"
       )}
     </div>
   );

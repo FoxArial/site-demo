@@ -13,5 +13,9 @@
 }
 
 .info-bg {
-  top: -150;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  width: 100vw;
+  overflow: hidden;
 }

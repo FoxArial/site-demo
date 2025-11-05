@@ -10,12 +10,12 @@ export default async function FooterElement() {
 
   const { description, infoColumns, links, logo, socialLogos, text } = footer;
   return (
-    <footer className="main-side-padding">
-      <div className="topFooter">
+    <footer className="topFooter footer-style main-side-padding">
+      <div className="footer-columns">
         {infoColumns.map((item) => (
           <div key={item.id}>
             <p
-              className={`text-${item.title.color} textWeight-${item.title.fontWeight} text-smallTitle`}
+              className={`text-${item.title.color} textWeight-${item.title.fontWeight} text-smallTitle footer-columns-title`}
             >
               {item.title.label}
             </p>
@@ -35,30 +35,28 @@ export default async function FooterElement() {
           </div>
         ))}
       </div>
-      <div className="middleFooter">
+      <div className="middleFooter flex-central-space">
         <Logo
           footer={footer}
           className={`text-${logo.label?.color} textWeight-${logo.label?.fontWeight} text-title`}
         />
-        <div className="social">
+        <div className="social flex-central-space">
           <p
             className={`text-${description.color} textWeight-${description.fontWeight} text-normal`}
           >
             {description.label}
           </p>
-          <ul>
+          <ul className="flex-central-space">
             {socialLogos.map((element) => (
               <li key={element.id}>
                 <Link href={element.href}>
-                  {element.image?.url ? (
+                  {element.image && (
                     <StrapiImage
                       src={element.image?.url}
                       alt={element.label.label}
                       width={25}
                       height={25}
                     />
-                  ) : (
-                    <span>{element.label.label}</span>
                   )}
                 </Link>
               </li>

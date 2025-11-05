@@ -1,0 +1,28 @@
+.footer-style {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.footer-element {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+.topFooter {
+}
+
+.footer-columns {
+  text-align: left;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  align-items: start;
+  width: 80%;
+  display: grid;
+}
+
+.footer-columns-title {
+  padding-bottom: 0.5rem;
+}

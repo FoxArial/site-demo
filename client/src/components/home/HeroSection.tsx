@@ -39,9 +39,9 @@ export function HeroSection(block: HeroSectionProps) {
         </div>
       </div>
 
-      {background.image?.url && (
+      {background.image && (
         <div className="bg-full-screen">
-          <StrapiImage src={background.image?.url} fill={true} />
+          <StrapiImage src={background.image.url} fill={true} />
         </div>
       )}
     </div>

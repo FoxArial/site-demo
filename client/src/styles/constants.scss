@@ -25,7 +25,7 @@ $base-font-size: 16;
   @return clamp(#{$min-rem}, #{calc(8vw - 0.1rem)}, #{$max-rem});
 }
 
-$bigTitle: fluid(32, 40);
+$bigTitle: fluid(30, 40);
 $title: fluid(22, 28);
 $smallTitle: fluid(18, 20);
 $main: fluid(15, 16);
