@@ -4,6 +4,7 @@
   align-items: center;
   text-align: center;
   justify-content: center;
+  padding-bottom: 1rem;
 }
 
 .footer-element {
@@ -12,17 +13,80 @@
   text-align: center;
   justify-content: space-between;
 }
+
 .topFooter {
+  padding: 4.5rem 0 3rem 0;
 }
 
 .footer-columns {
-  text-align: left;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  align-items: start;
-  width: 80%;
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  align-items: start;
+  width: 95%;
+  gap: 2rem;
 }
 
+.inside {
+  text-align: left;
+}
+
+.footer-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .footer-columns-title {
   padding-bottom: 0.5rem;
+}
+
+.column-li {
+  padding-top: 1rem;
+}
+
+.middleFooter {
+  border-bottom: 3px solid $whiteSmoke;
+  border-top: 3px solid $whiteSmoke;
+  width: 100%;
+  padding: 1rem 1.1rem;
+}
+
+.middleFooter-content {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  @media screen and (max-width: 700) {
+    flex-direction: column;
+  }
+}
+
+.social {
+  display: flex;
+  width: 70%;
+  align-items: center;
+  gap: 1rem;
+  @media screen and (max-width: 735) {
+    flex-direction: column;
+    flex: 1 0 0;
+  }
+}
+
+.social-elements {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  gap: 1rem;
+}
+
+.social-element {
+  padding: 8px 8px;
+  border-radius: 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  a {
+    display: block;
+    height: 25px;
+  }
+}
+
+.bottomFooter {
+  padding: 2rem 0;
 }
