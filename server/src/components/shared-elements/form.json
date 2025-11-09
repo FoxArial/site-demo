@@ -8,7 +8,7 @@
     "title": {
       "type": "component",
       "component": "shared-elements.text",
-      "repeatable": false
+      "repeatable": true
     },
     "description": {
       "type": "component",
@@ -19,6 +19,11 @@
       "type": "component",
       "component": "shared-elements.input",
       "repeatable": true
+    },
+    "cta": {
+      "type": "component",
+      "component": "shared-elements.button-link",
+      "repeatable": false
     }
   },
   "config": {}

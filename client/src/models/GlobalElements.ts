@@ -71,12 +71,15 @@ export interface Background {
 }
 
 export interface InputElement {
+  id: number;
   label: TextLabel;
   placeholder: TextLabel;
+  type: "text" | "number" | "email" | "tel";
 }
 
 export interface FormElement {
-  title: TextLabel;
+  title: TextLabel[];
   description: TextLabel;
   inputs: InputElement[];
+  cta: ButtonLink;
 }

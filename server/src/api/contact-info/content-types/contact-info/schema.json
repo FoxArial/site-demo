@@ -19,7 +19,7 @@
       "type": "email",
       "required": true
     },
-    "number": {
+    "phone": {
       "type": "string",
       "required": true
     },

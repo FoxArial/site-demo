@@ -11,6 +11,17 @@
       "repeatable": false,
       "required": true
     },
+    "type": {
+      "type": "enumeration",
+      "required": true,
+      "default": "text",
+      "enum": [
+        "email",
+        "text",
+        "number",
+        "tel"
+      ]
+    },
     "placeholder": {
       "type": "component",
       "component": "shared-elements.text",

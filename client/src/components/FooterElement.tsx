@@ -11,7 +11,7 @@ export default async function FooterElement() {
   const { description, infoColumns, links, logo, socialLogos, text } = footer;
   return (
     <footer className="footer-style">
-      <div className="topFooter footer-columns main-side-padding">
+      <div className="topFooter footer-columns">
         {infoColumns.map((item) => (
           <div key={item.id} className=" footer-column">
             <div className="inside">
@@ -26,7 +26,7 @@ export default async function FooterElement() {
                   <li className="column-li">
                     <Link
                       href={element.href}
-                      className={`text-${element.label?.color} textWeight-${element.label?.fontWeight} text-normal`}
+                      className={`text-${element.label?.color} textWeight-${element.label?.fontWeight} text-main`}
                     >
                       {element.label?.label}
                     </Link>
@@ -45,7 +45,7 @@ export default async function FooterElement() {
           />
           <div className="social">
             <p
-              className={`text-${description.color} textWeight-${description.fontWeight} text-normal`}
+              className={`text-${description.color} textWeight-${description.fontWeight} text-main`}
             >
               {description.label}
             </p>
@@ -74,7 +74,7 @@ export default async function FooterElement() {
             <Link
               key={item.id}
               href={item.href}
-              className={`text-${item.label?.color} textWeight-${item.label?.fontWeight} text-normal`}
+              className={`text-${item.label?.color} textWeight-${item.label?.fontWeight} text-main`}
             >
               {item.label?.label}
             </Link>
@@ -82,7 +82,7 @@ export default async function FooterElement() {
         </ul>
       </div>
       <p
-        className={`text-${text.color} textWeight-${text.fontWeight} text-normall`}
+        className={`text-${text.color} textWeight-${text.fontWeight} text-main`}
       >
         {text.label}
       </p>

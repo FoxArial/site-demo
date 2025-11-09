@@ -19,7 +19,7 @@ export function HeroSection(block: HeroSectionProps) {
         </div>
         <div className="title-description">
           <p
-            className={`text-${description.color} textWeight-${description.fontWeight} smallTitle `}
+            className={`text-${description.color} textWeight-${description.fontWeight} text-smallTitle `}
           >
             {description.label}
           </p>

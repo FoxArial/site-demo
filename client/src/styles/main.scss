@@ -5,10 +5,13 @@
 @import "./global/header.scss";
 @import "./global/footer.scss";
 
+@import "./custom/form.scss";
+
 @import "./home-page/heroSection.scss";
 @import "./home-page/technologiesSection.scss";
 @import "./home-page/servicesSection.scss";
 @import "./home-page/infoSection.scss";
+@import "./home-page/contact-us.scss";
 
 * {
   margin: 0;
@@ -81,6 +84,7 @@
   width: auto;
   height: 3rem;
   border-radius: 0.5rem;
+  border: none;
   text-align: center;
   display: flex;
   align-items: center;

@@ -10,14 +10,19 @@
       "component": "shared-elements.text",
       "repeatable": false
     },
-    "description": {
-      "type": "component",
-      "component": "shared-elements.text",
-      "repeatable": false
-    },
     "form": {
       "type": "component",
       "component": "shared-elements.form",
+      "repeatable": false
+    },
+    "description": {
+      "type": "component",
+      "component": "shared-elements.long-text",
+      "repeatable": true
+    },
+    "background": {
+      "type": "component",
+      "component": "shared-elements.background",
       "repeatable": false
     }
   },

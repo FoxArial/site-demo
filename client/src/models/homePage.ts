@@ -86,8 +86,9 @@ export interface ContactUsSectionProps {
   __component: "blocks.contact-us-section";
   id: number;
   title: TextLabel;
-  description: TextLabel;
-  fotm: FormElement;
+  description: TextLabel[];
+  form: FormElement;
+  background: Background;
 }
 
 export interface HomePage {

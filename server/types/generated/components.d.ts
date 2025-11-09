@@ -6,7 +6,8 @@ export interface BlocksContactUsSection extends Struct.ComponentSchema {
     displayName: 'Contact Us Section';
   };
   attributes: {
-    description: Schema.Attribute.Component<'shared-elements.text', false>;
+    background: Schema.Attribute.Component<'shared-elements.background', false>;
+    description: Schema.Attribute.Component<'shared-elements.long-text', true>;
     form: Schema.Attribute.Component<'shared-elements.form', false>;
     title: Schema.Attribute.Component<'shared-elements.text', false>;
   };
@@ -153,9 +154,10 @@ export interface SharedElementsForm extends Struct.ComponentSchema {
     displayName: 'Form';
   };
   attributes: {
+    cta: Schema.Attribute.Component<'shared-elements.button-link', false>;
     description: Schema.Attribute.Component<'shared-elements.text', false>;
     inputs: Schema.Attribute.Component<'shared-elements.input', true>;
-    title: Schema.Attribute.Component<'shared-elements.text', false>;
+    title: Schema.Attribute.Component<'shared-elements.text', true>;
   };
 }
 
@@ -180,6 +182,9 @@ export interface SharedElementsInput extends Struct.ComponentSchema {
       Schema.Attribute.Required;
     placeholder: Schema.Attribute.Component<'shared-elements.text', false> &
       Schema.Attribute.Required;
+    type: Schema.Attribute.Enumeration<['email', 'text', 'number', 'tel']> &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'text'>;
   };
 }
 

@@ -18,7 +18,7 @@ export function Carousel({ arr }: CarouselProps) {
               className="card-image"
             />
             <div
-              className={`text-${item.description.color} textWeight-${item.description.fontWeight} text-normal card-title`}
+              className={`text-${item.description.color} textWeight-${item.description.fontWeight} text-main card-title`}
             >
               {item.description.label}
             </div>

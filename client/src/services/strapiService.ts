@@ -9,3 +9,26 @@ export async function fetchData<T>(path: string): Promise<T> {
   }
   return await response.json();
 }
+
+export async function postData<T>(path: string, userData: unknown): Promise<T> {
+  try {
+    const response = await fetch(BASE_URL + path, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: userData ? JSON.stringify({ data: userData }) : undefined,
+    });
+
+    if (!response.ok) {
+      const errText = await response.text();
+      throw new Error(`Failed to POST ${path}: ${response.status} ${errText}`);
+    }
+    const data = (await response.json()) as T;
+    console.dir(data, { depth: null });
+    return data;
+  } catch (error) {
+    console.error("Contact Service Error:", error);
+    throw error;
+  }
+}

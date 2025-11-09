@@ -105,6 +105,13 @@ const populate = {
         populate: {
           title: true,
           description: true,
+          background: {
+            populate: {
+              image: {
+                fields: ["url"],
+              },
+            },
+          },
           form: {
             populate: {
               title: true,
@@ -113,6 +120,11 @@ const populate = {
                 populate: {
                   label: true,
                   placeholder: true,
+                },
+              },
+              cta: {
+                populate: {
+                  label: true,
                 },
               },
             },

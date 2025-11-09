@@ -21,7 +21,7 @@ export function ServiceCardComp({ item }: ServiceCardCompProps) {
           </div>
           <div className="title-description">
             <p
-              className={`text-${description.color} textWeight-${description.fontWeight} text-normal `}
+              className={`text-${description.color} textWeight-${description.fontWeight} text-main `}
             >
               {description.label}
             </p>
