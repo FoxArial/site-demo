@@ -1,10 +1,11 @@
 "use client";
 
 import { FormElement } from "@/models/GlobalElements";
-import { useActionState } from "react";
+import { useActionState, useEffect, useRef } from "react";
 import { sendInfo } from "@/data/contact-us-actions";
 import { FormState } from "@/utils/validationForm";
 import { ZodErrors } from "./zodErrors";
+import { StrapiInfo } from "./strapiInfo";
 
 type FormProps = {
   data: FormElement;
@@ -18,15 +19,23 @@ function isFieldName(value: string): value is FieldName {
 
 const INITIAL_STATE: FormState = {
   success: false,
-  messageInfo: undefined,
   strapiErrors: null,
   zodErrors: null,
 };
 
 export default function Form({ data }: FormProps) {
   const { title, description, inputs, cta } = data;
-
+  const formRef = useRef<HTMLFormElement>(null);
   const [formState, formAction] = useActionState(sendInfo, INITIAL_STATE);
+
+  useEffect(() => {
+    if (formState.success) {
+      const timer = setTimeout(() => {
+        formRef.current?.reset();
+      }, 3000);
+      return () => clearTimeout(timer);
+    }
+  }, [formState.success]);
 
   return (
     <form className="form gap-between" action={formAction}>
@@ -89,14 +98,27 @@ export default function Form({ data }: FormProps) {
           }
         })}
       </div>
-
-      <button type="submit" className={`button-${cta.theme} button-style`}>
-        <p
-          className={`text-${cta.label.color} textWeight-${cta.label.fontWeight}`}
-        >
-          {cta.label.label}
-        </p>
-      </button>
+      <div className="full-width">
+        <button type="submit" className={`button-${cta.theme} button-style`}>
+          <p
+            className={`text-${cta.label.color} textWeight-${cta.label.fontWeight}`}
+          >
+            {cta.label.label}
+          </p>
+        </button>
+        <StrapiInfo
+          error={formState?.strapiErrors}
+          success={
+            formState?.success
+              ? {
+                  status: 200,
+                  name: "Success",
+                  message: "Info sent successfully!",
+                }
+              : null
+          }
+        />
+      </div>
     </form>
   );
 }

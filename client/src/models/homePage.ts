@@ -27,7 +27,7 @@ interface InfoCard {
   description: TextLabel;
 }
 
-interface PortfolioCard {
+export interface PortfolioCard {
   id: number;
   title: TextLabel;
   description: TextLabel;

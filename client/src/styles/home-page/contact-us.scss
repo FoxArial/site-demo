@@ -3,6 +3,9 @@
   width: 100%;
   display: flex;
   overflow: hidden;
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+  }
 }
 
 .contact-info {
@@ -11,7 +14,9 @@
   flex-direction: column;
   justify-content: center;
   width: 60%;
-  padding: 4.5rem;
+  @media screen and (max-width: 900px) {
+    width: 100%;
+  }
 }
 
 .contact-info-description {
@@ -29,4 +34,21 @@
 .contact-form {
   width: 40%;
   background-color: $whiteSmoke;
+  @media screen and (max-width: 900px) {
+    width: 100%;
+  }
+}
+
+.full-width {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  button {
+    width: 100%;
+  }
+}
+
+.contact-us-padding {
+  padding: clamp(2rem, calc(8vh - 0.5rem), 4.5rem);
 }

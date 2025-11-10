@@ -6,7 +6,7 @@ export function ContactUsSection(block: ContactUsSectionProps) {
   const { background, description, form, title } = block;
   return (
     <div className="contact-us-section">
-      <div className="contact-info gap-between ">
+      <div className="contact-info gap-between contact-us-padding">
         <p
           className={`text-${title.color} textWeight-${title.fontWeight} text-bigTitle `}
         >
@@ -32,7 +32,7 @@ export function ContactUsSection(block: ContactUsSectionProps) {
           </div>
         )}
       </div>
-      <div className="contact-form">
+      <div className="contact-form contact-us-padding">
         <Form data={form} />
       </div>
     </div>

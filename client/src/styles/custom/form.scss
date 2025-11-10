@@ -4,7 +4,6 @@
   justify-content: space-between;
   width: 100%;
   height: 100%;
-  padding: 4.5rem;
 }
 
 .form-title {
@@ -52,5 +51,10 @@
 
 .error-text {
   color: $jaffa;
+  margin-top: 2px;
+}
+
+.success-text {
+  color: $spearmint;
   margin-top: 2px;
 }

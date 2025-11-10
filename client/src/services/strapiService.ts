@@ -25,7 +25,6 @@ export async function postData<T>(path: string, userData: unknown): Promise<T> {
       throw new Error(`Failed to POST ${path}: ${response.status} ${errText}`);
     }
     const data = (await response.json()) as T;
-    console.dir(data, { depth: null });
     return data;
   } catch (error) {
     console.error("Contact Service Error:", error);

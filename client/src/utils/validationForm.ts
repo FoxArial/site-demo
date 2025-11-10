@@ -14,7 +14,6 @@ export type ContactFormValues = z.infer<typeof ContactFormSchema>;
 
 export type FormState = {
   success?: boolean;
-  messageInfo?: string;
   data?: {
     name?: string;
     email?: string;
