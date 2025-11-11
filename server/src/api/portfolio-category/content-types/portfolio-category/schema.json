@@ -19,6 +19,12 @@
     },
     "order": {
       "type": "integer"
+    },
+    "portfolio_projects": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::portfolio-project.portfolio-project",
+      "mappedBy": "portfolio_category"
     }
   }
 }

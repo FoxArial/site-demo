@@ -80,25 +80,7 @@ const populate = {
         populate: {
           title: true,
           description: true,
-          projects: {
-            populate: {
-              title: true,
-              description: true,
-              background: {
-                populate: {
-                  image: {
-                    fields: ["url"],
-                  },
-                },
-              },
-
-              link: {
-                populate: {
-                  label: true,
-                },
-              },
-            },
-          },
+          portfolio_categories: true,
         },
       },
       "blocks.contact-us-section": {

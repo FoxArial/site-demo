@@ -49,10 +49,6 @@ export interface BlocksPortfolioSection extends Struct.ComponentSchema {
       'oneToMany',
       'api::portfolio-category.portfolio-category'
     >;
-    projects: Schema.Attribute.Component<
-      'shared-elements.portfolio-card',
-      true
-    >;
     title: Schema.Attribute.Component<'shared-elements.text', false>;
   };
 }

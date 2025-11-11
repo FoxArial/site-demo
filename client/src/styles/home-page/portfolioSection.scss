@@ -1,0 +1,28 @@
+.portfolio-section {
+  flex-direction: column;
+}
+
+.portfolio-category {
+  width: 100%;
+}
+
+.categories-category {
+  cursor: pointer;
+  &:hover {
+    color: $golden;
+  }
+}
+
+.active-section {
+  background-color: $darkTeal;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  &:hover {
+    background-color: $orange;
+  }
+}
+
+.portfolioCard-bg {
+  position: relative;
+}

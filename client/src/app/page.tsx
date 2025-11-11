@@ -1,5 +1,5 @@
 import { RenderBlock } from "@/components/home/blocks";
-import { getHomePage } from "@/services/fetchPages";
+import { getHomePage } from "@/services/fetchData";
 
 export default async function HomeRoute() {
   const data = await getHomePage();

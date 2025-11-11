@@ -11,6 +11,7 @@
 @import "./home-page/technologiesSection.scss";
 @import "./home-page/servicesSection.scss";
 @import "./home-page/infoSection.scss";
+@import "./home-page/portfolioSection.scss";
 @import "./home-page/contact-us.scss";
 
 * {
@@ -30,8 +31,20 @@
   padding: 0 1.1rem;
 }
 
+.main-small-vertical-padding {
+  padding: 1.1rem 0;
+}
+
 .main-horizontal-padding {
   padding: 4.5rem 0;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.width-80 {
+  width: 80%;
 }
 
 .width-70 {

@@ -550,8 +550,49 @@ export interface ApiPortfolioCategoryPortfolioCategory
       Schema.Attribute.Private;
     name: Schema.Attribute.String;
     order: Schema.Attribute.Integer;
+    portfolio_projects: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::portfolio-project.portfolio-project'
+    >;
     publishedAt: Schema.Attribute.DateTime;
     slug: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiPortfolioProjectPortfolioProject
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'portfolio_projects';
+  info: {
+    displayName: 'PortfolioProject';
+    pluralName: 'portfolio-projects';
+    singularName: 'portfolio-project';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    background: Schema.Attribute.Component<'shared-elements.background', false>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    dbTitle: Schema.Attribute.String;
+    description: Schema.Attribute.Component<'shared-elements.long-text', false>;
+    link: Schema.Attribute.Component<'shared-elements.link', false>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::portfolio-project.portfolio-project'
+    > &
+      Schema.Attribute.Private;
+    portfolio_category: Schema.Attribute.Relation<
+      'manyToOne',
+      'api::portfolio-category.portfolio-category'
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    title: Schema.Attribute.Component<'shared-elements.text', false>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1072,6 +1113,7 @@ declare module '@strapi/strapi' {
       'api::global.global': ApiGlobalGlobal;
       'api::home-page.home-page': ApiHomePageHomePage;
       'api::portfolio-category.portfolio-category': ApiPortfolioCategoryPortfolioCategory;
+      'api::portfolio-project.portfolio-project': ApiPortfolioProjectPortfolioProject;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;

@@ -19,11 +19,6 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::portfolio-category.portfolio-category"
-    },
-    "projects": {
-      "type": "component",
-      "component": "shared-elements.portfolio-card",
-      "repeatable": true
     }
   },
   "config": {}

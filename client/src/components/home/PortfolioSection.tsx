@@ -1,7 +1,13 @@
 import { PortfolioSectionProps } from "@/models/HomePage";
+import { PortfolioGrid } from "../custom/portfolio-grid";
+import { PortfolioNav } from "../custom/portfolio-nav";
+import CategoryContextProvider from "../data/contexts/category-context";
+import { getPortfolioProjects } from "@/services/fetchData";
 
 export async function PortfolioSection(block: PortfolioSectionProps) {
-  const { description, project, title } = block;
+  const projects = await getPortfolioProjects();
+  const projectsData = projects.data;
+  const { description, portfolio_categories, title } = block;
   return (
     <div className="portfolio-section flex-central  main-horizontal-padding">
       <div className="title width-70">
@@ -20,7 +26,12 @@ export async function PortfolioSection(block: PortfolioSectionProps) {
           </p>
         </div>
       </div>
-      <div className="portfolio-grid"></div>
+      <div className="portfolio-category width-80">
+        <CategoryContextProvider categories={portfolio_categories}>
+          <PortfolioNav data={portfolio_categories} />
+          <PortfolioGrid data={projectsData} />
+        </CategoryContextProvider>
+      </div>
     </div>
   );
 }

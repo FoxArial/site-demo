@@ -2,10 +2,10 @@ import {
   Background,
   ButtonLink,
   FormElement,
-  LinkItem,
   TextLabel,
   ImageData,
 } from "./GlobalElements";
+import { IPortfolioCategories } from "./PortfolioCategories";
 
 export interface TechnoCard {
   id: number;
@@ -25,14 +25,6 @@ interface InfoCard {
   id: number;
   title: TextLabel;
   description: TextLabel;
-}
-
-export interface PortfolioCard {
-  id: number;
-  title: TextLabel;
-  description: TextLabel;
-  background: Background;
-  link: LinkItem;
 }
 
 type ContentBlock =
@@ -79,7 +71,7 @@ export interface PortfolioSectionProps {
   id: number;
   title: TextLabel;
   description: TextLabel;
-  project: PortfolioCard[];
+  portfolio_categories: IPortfolioCategories[];
 }
 
 export interface ContactUsSectionProps {
