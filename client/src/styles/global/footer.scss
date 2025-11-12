@@ -54,7 +54,7 @@
   width: 100%;
   display: flex;
   gap: 2rem;
-  @media screen and (max-width: 700) {
+  @media (max-width: 700) {
     flex-direction: column;
   }
 }
@@ -64,7 +64,7 @@
   width: 70%;
   align-items: center;
   gap: 1rem;
-  @media screen and (max-width: 735) {
+  @media (max-width: 735) {
     flex-direction: column;
     flex: 1 0 0;
   }

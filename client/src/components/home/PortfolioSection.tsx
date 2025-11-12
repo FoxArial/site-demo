@@ -26,7 +26,7 @@ export async function PortfolioSection(block: PortfolioSectionProps) {
           </p>
         </div>
       </div>
-      <div className="portfolio-category width-80">
+      <div className="portfolio-category">
         <CategoryContextProvider categories={portfolio_categories}>
           <PortfolioNav data={portfolio_categories} />
           <PortfolioGrid data={projectsData} />

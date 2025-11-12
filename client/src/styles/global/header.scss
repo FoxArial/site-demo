@@ -8,7 +8,7 @@
 
 .header-right-part {
   width: 60%;
-  @media screen and (max-width: 900px) {
+  @media (max-width: 900px) {
     width: fit-content;
   }
 }
@@ -21,7 +21,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @media screen and (max-width: 900px) {
+  @media (max-width: 900px) {
     padding: 1rem 0;
     flex-direction: column;
     gap: 2rem;
