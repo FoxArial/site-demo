@@ -8,7 +8,7 @@ export default async function HeaderElement() {
   if (!header) return <div>Header not found</div>;
   const { navItems, logo, cta } = header;
   return (
-    <header className="header-style padding-header">
+    <header className="header-style flex-central-space main-side-padding">
       <Logo
         header={header}
         className={`text-${logo.label?.color} textWeight-${logo.label?.fontWeight} text-bigTitle`}

@@ -5,11 +5,17 @@
 
 .info-container {
   width: 95%;
-  display: flex;
   flex-flow: row wrap;
-  align-items: center;
-  text-align: center;
-  justify-content: space-around;
+  @include tablet {
+    width: 100%;
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+  }
+}
+
+.info-items {
+  display: flex;
+  flex-direction: column;
 }
 
 .info-bg {

@@ -1,9 +1,6 @@
 .header-style {
-  display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
+  padding-top: 1rem;
 }
 
 .header-right-part {
@@ -13,14 +10,7 @@
   }
 }
 
-.padding-header {
-  padding: 1rem 1.1rem 0 1.1rem;
-}
-
 .header-nav-style {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   @media (max-width: 900px) {
     padding: 1rem 0;
     flex-direction: column;

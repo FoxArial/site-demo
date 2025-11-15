@@ -29,7 +29,7 @@ export function PortfolioGrid({ data }: TPortfolioGridProps) {
           className="show-more-btn"
           onClick={() => setShowAll((prev) => !prev)}
         >
-          {showAll ? "Show All" : "Hide"}
+          {showAll ? "Hide" : "Show All"}
         </button>
       )}
     </div>

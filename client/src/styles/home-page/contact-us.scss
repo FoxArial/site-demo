@@ -3,7 +3,7 @@
   width: 100%;
   display: flex;
   overflow: hidden;
-  @media (max-width: 900px) {
+  @include tablet {
     flex-direction: column;
   }
 }
@@ -14,7 +14,7 @@
   flex-direction: column;
   justify-content: center;
   width: 60%;
-  @media (max-width: 900px) {
+  @include tablet {
     width: 100%;
   }
 }
@@ -34,7 +34,7 @@
 .contact-form {
   width: 40%;
   background-color: $whiteSmoke;
-  @media (max-width: 900px) {
+  @include tablet {
     width: 100%;
   }
 }
@@ -47,8 +47,4 @@
   button {
     width: 100%;
   }
-}
-
-.contact-us-padding {
-  padding: clamp(2rem, calc(8vh - 0.5rem), 4.5rem);
 }

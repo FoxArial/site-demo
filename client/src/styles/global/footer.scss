@@ -1,9 +1,5 @@
 .footer-style {
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
   padding-bottom: 1rem;
 }
 
@@ -12,10 +8,6 @@
   align-items: center;
   text-align: center;
   justify-content: space-between;
-}
-
-.topFooter {
-  padding: 4.5rem 1.1rem 3rem 1.1rem;
 }
 
 .footer-columns {
@@ -30,11 +22,6 @@
   text-align: left;
 }
 
-.footer-column {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .footer-columns-title {
   padding-bottom: 0.5rem;
 }
@@ -52,7 +39,6 @@
 
 .middleFooter-content {
   width: 100%;
-  display: flex;
   gap: 2rem;
   @media (max-width: 700) {
     flex-direction: column;
@@ -60,9 +46,6 @@
 }
 
 .social {
-  display: flex;
-  width: 70%;
-  align-items: center;
   gap: 1rem;
   @media (max-width: 735) {
     flex-direction: column;
@@ -71,8 +54,6 @@
 }
 
 .social-elements {
-  display: flex;
-  justify-content: center;
   flex-flow: row wrap;
   gap: 1rem;
 }

@@ -6,7 +6,7 @@ export function HeroSection(block: HeroSectionProps) {
   const { title, description, background, cta } = block;
   return (
     <div className="flex-central hero-section">
-      <div className="title gap-between width-70">
+      <div className="title gap-between">
         <div className="title-header">
           {title.map((item) => (
             <p
@@ -24,7 +24,7 @@ export function HeroSection(block: HeroSectionProps) {
             {description.label}
           </p>
         </div>
-        <div className="title-cta">
+        <div className="title-cta flex-central">
           {cta.map((item) => (
             <ButtonCustom
               key={item.id}

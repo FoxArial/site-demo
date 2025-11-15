@@ -1,8 +1,8 @@
 import { Footer } from "@/models/Footer";
 import { selectData } from "@/utils/globalElementSelection";
 import { Logo } from "@/utils/logoValidation";
-import Link from "next/link";
 import { StrapiImage } from "./custom/strapa-image";
+import CustomLink from "./custom/customLink";
 
 export default async function FooterElement() {
   const footer = await selectData<Footer>("footer");
@@ -10,10 +10,10 @@ export default async function FooterElement() {
 
   const { description, infoColumns, links, logo, socialLogos, text } = footer;
   return (
-    <footer className="footer-style">
-      <div className="topFooter footer-columns">
+    <footer className="footer-style flex-central">
+      <div className="footer-columns main-big-vertical-padding main-side-padding">
         {infoColumns.map((item) => (
-          <div key={item.id} className=" footer-column">
+          <div key={item.id} className="flex-central">
             <div className="inside">
               <p
                 className={`text-${item.title.color} textWeight-${item.title.fontWeight} text-smallTitle footer-columns-title`}
@@ -24,12 +24,13 @@ export default async function FooterElement() {
               {item.links.map((element) => (
                 <ul key={element.id}>
                   <li className="column-li">
-                    <Link
+                    <CustomLink
                       href={element.href}
+                      isExternal={element.isExternal}
                       className={`text-${element.label?.color} textWeight-${element.label?.fontWeight} text-main`}
                     >
                       {element.label?.label}
-                    </Link>
+                    </CustomLink>
                   </li>
                 </ul>
               ))}
@@ -43,41 +44,47 @@ export default async function FooterElement() {
             footer={footer}
             className={`text-${logo.label?.color} textWeight-${logo.label?.fontWeight} text-title`}
           />
-          <div className="social">
+          <div className="social flex-central width-70">
             <p
               className={`text-${description.color} textWeight-${description.fontWeight} text-main`}
             >
               {description.label}
             </p>
-            <ul className="social-elements">
-              {socialLogos.map((element) => (
-                <li key={element.id} className="social-element">
-                  <Link href={element.href}>
-                    {element.image && (
-                      <StrapiImage
-                        src={element.image?.url}
-                        alt={element.label.label}
-                        width={25}
-                        height={25}
-                      />
-                    )}
-                  </Link>
-                </li>
-              ))}
+            <ul className="social-elements flex-central">
+              {socialLogos.map((element) => {
+                return (
+                  <li key={element.id} className="social-element ">
+                    <CustomLink
+                      isExternal={element.isExternal}
+                      href={element.href}
+                    >
+                      {element.image && (
+                        <StrapiImage
+                          src={element.image?.url}
+                          alt={element.label.label}
+                          width={25}
+                          height={25}
+                        />
+                      )}
+                    </CustomLink>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </div>
       </div>
-      <div className="bottomFooter">
-        <ul className="social-elements">
+      <div className="main-side-padding main-small-vertical-padding">
+        <ul className="social-elements flex-central">
           {links.map((item) => (
-            <Link
+            <CustomLink
               key={item.id}
               href={item.href}
+              isExternal={item.isExternal}
               className={`text-${item.label?.color} textWeight-${item.label?.fontWeight} text-main`}
             >
               {item.label?.label}
-            </Link>
+            </CustomLink>
           ))}
         </ul>
       </div>

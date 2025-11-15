@@ -29,8 +29,8 @@ export default function Navbar({ navItems, cta }: NavbarProps) {
   return (
     <nav className="header-right-part">
       {!isMobile ? (
-        <div className="header-style">
-          <ul className="header-nav-style header-right-part">
+        <div className="header-style flex-central-space">
+          <ul className="header-nav-style flex-central-space header-right-part">
             {navItems.map((item) => {
               const isActive = pathname === item.href;
 
@@ -80,7 +80,7 @@ export default function Navbar({ navItems, cta }: NavbarProps) {
                 <span />
               </button>
             </div>
-            <ul className="header-nav-style">
+            <ul className="header-nav-style flex-central-space">
               {navItems.map((item) => {
                 const isActive = pathname === item.href;
 

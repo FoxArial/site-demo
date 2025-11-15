@@ -9,7 +9,7 @@ export async function PortfolioSection(block: PortfolioSectionProps) {
   const projectsData = projects.data;
   const { description, portfolio_categories, title } = block;
   return (
-    <div className="portfolio-section flex-central  main-horizontal-padding">
+    <div className="portfolio-section flex-central  main-big-vertical-padding">
       <div className="title width-70">
         <div className="title-header">
           <p

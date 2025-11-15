@@ -5,9 +5,9 @@ export function InfoSection(block: InfoSectionProps) {
   const { card, background } = block;
   return (
     <div className="info-section flex-central">
-      <div className="info-container main-horizontal-padding gap-between">
+      <div className="info-container flex-central-space main-big-vertical-padding gap-between">
         {card.map((item) => (
-          <div key={item.id} className="title">
+          <div key={item.id} className="info-itemss">
             <div className="title-header">
               <p
                 className={`text-${item.title.color} textWeight-${item.title.fontWeight} text-bigTitle `}
