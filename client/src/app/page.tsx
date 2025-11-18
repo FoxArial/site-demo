@@ -1,5 +1,5 @@
 import FadeSection from "@/components/custom/fadeSection";
-import { RenderBlock } from "@/components/home/blocks";
+import { BlockMapProps, RenderBlock } from "@/components/home/blocks";
 import { getHomePage } from "@/services/fetchData";
 
 export default async function HomeRoute() {
@@ -7,7 +7,7 @@ export default async function HomeRoute() {
   if (!data) return "No data";
   return (
     <div>
-      {data.data.content.map((item, index) => {
+      {data.data.content.map((item: BlockMapProps, index) => {
         return index > 0 ? (
           <FadeSection key={item.id}>{RenderBlock(item)}</FadeSection>
         ) : (
