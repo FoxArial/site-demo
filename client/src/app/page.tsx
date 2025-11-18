@@ -1,6 +1,6 @@
-import FadeSection from "@/components/custom/fadeSection";
-import { BlockMapProps, RenderBlock } from "@/components/home/blocks";
-import { getHomePage } from "@/services/fetchData";
+import FadeSection from "../components/custom/fadeSection";
+import { BlockMapProps, RenderBlock } from "../components/home/blocks";
+import { getHomePage } from "../services/fetchData";
 
 export default async function HomeRoute() {
   const data = await getHomePage();

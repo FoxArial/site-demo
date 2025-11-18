@@ -1,6 +1,6 @@
 "use client";
 
-import { IPortfolioProject } from "@/models/PortfolioProject";
+import { IPortfolioProject } from "../../models/PortfolioProject";
 import { useCategoryContext } from "../data/contexts/category-context";
 import PortfolioCard from "./portfolioCard";
 import { useState } from "react";

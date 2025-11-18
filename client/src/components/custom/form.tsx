@@ -1,9 +1,9 @@
 "use client";
 
-import { FormElement } from "@/models/GlobalElements";
+import { FormElement } from "../../models/GlobalElements";
 import { useActionState, useEffect, useRef } from "react";
-import { sendInfo } from "@/data/contact-us-actions";
-import { FormState } from "@/utils/validationForm";
+import { sendInfo } from "../../data/contact-us-actions";
+import { FormState } from "../../utils/validationForm";
 import { ZodErrors } from "./zodErrors";
 import { StrapiInfo } from "./strapiInfo";
 

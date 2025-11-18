@@ -1,4 +1,4 @@
-import { getStrapiURL } from "@/services/strapiService";
+import { getStrapiURL } from "../../services/strapiService";
 import Image from "next/image";
 
 interface IStrapiMediaProps {

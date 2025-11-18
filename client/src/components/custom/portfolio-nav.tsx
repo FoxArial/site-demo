@@ -1,5 +1,5 @@
 "use client";
-import { IPortfolioCategories } from "@/models/PortfolioCategories";
+import { IPortfolioCategories } from "../../models/PortfolioCategories";
 import { useCategoryContext } from "../data/contexts/category-context";
 
 interface IPortfolioNavParams {

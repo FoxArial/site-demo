@@ -1,8 +1,11 @@
 "use server";
 
 import { z } from "zod";
-import { ContactFormSchema, type FormState } from "@/utils/validationForm";
-import { postContact } from "@/services/postData";
+import {
+  ContactFormSchema,
+  type FormState,
+} from "../../src/utils/validationForm";
+import { postContact } from "../../src/services/postData";
 
 export async function sendInfo(
   prevState: FormState,

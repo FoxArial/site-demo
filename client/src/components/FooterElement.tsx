@@ -1,6 +1,6 @@
-import { Footer } from "@/models/Footer";
-import { selectData } from "@/utils/globalElementSelection";
-import { Logo } from "@/utils/logoValidation";
+import { Footer } from "../models/Footer";
+import { selectData } from "../../src//utils/globalElementSelection";
+import { Logo } from "../../src/utils/logoValidation";
 import { StrapiImage } from "./custom/strapa-image";
 import CustomLink from "./custom/customLink";
 

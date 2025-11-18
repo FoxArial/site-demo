@@ -1,7 +1,7 @@
-import { HomePageResponse } from "@/models/HomePage";
+import { HomePageResponse } from "../models/HomePage";
 import { fetchData } from "./strapiService";
-import { GlobalResponse } from "@/models/Global";
-import { IPortfolioProjectResponse } from "@/models/PortfolioProject";
+import { GlobalResponse } from "../models/Global";
+import { IPortfolioProjectResponse } from "../models/PortfolioProject";
 
 export async function getGlobalElements(): Promise<GlobalResponse> {
   return await fetchData<GlobalResponse>("/api/global");

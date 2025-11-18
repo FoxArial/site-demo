@@ -1,4 +1,4 @@
-import { TechnoCard } from "@/models/HomePage";
+import { TechnoCard } from "../../models/HomePage";
 import { StrapiImage } from "./strapa-image";
 
 type CarouselProps = {

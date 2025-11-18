@@ -1,6 +1,6 @@
 "use client";
 
-import { IPortfolioCategories } from "@/models/PortfolioCategories";
+import { IPortfolioCategories } from "../../../models/PortfolioCategories";
 import React, { createContext, useContext, useState } from "react";
 
 type TCategoryContext = {

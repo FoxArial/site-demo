@@ -1,6 +1,6 @@
-import { StrapiImage } from "@/components/custom/strapa-image";
-import { Footer } from "@/models/Footer";
-import { Header } from "@/models/Header";
+import { StrapiImage } from "../components/custom/strapa-image";
+import { Footer } from "../models/Footer";
+import { Header } from "../models/Header";
 import Link from "next/link";
 
 type LogoProps =

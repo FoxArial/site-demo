@@ -1,6 +1,6 @@
 "use client";
 
-import { useFadeInOnScroll } from "@/utils/useFadeInOnScroll";
+import { useFadeInOnScroll } from "../../utils/useFadeInOnScroll";
 
 export default function FadeSection({ children }: React.PropsWithChildren) {
   const { ref, isVisible } = useFadeInOnScroll();

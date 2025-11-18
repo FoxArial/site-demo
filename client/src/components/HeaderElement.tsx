@@ -1,6 +1,6 @@
-import { Header } from "@/models/Header";
-import { selectData } from "@/utils/globalElementSelection";
-import { Logo } from "@/utils/logoValidation";
+import { Header } from "../../src//models/Header";
+import { selectData } from "../../src//utils/globalElementSelection";
+import { Logo } from "../../src//utils/logoValidation";
 import Navbar from "./custom/navBar";
 
 export default async function HeaderElement() {

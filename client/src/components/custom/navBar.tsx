@@ -1,6 +1,6 @@
 "use client";
 
-import { ButtonLink, LinkItem } from "@/models/GlobalElements";
+import { ButtonLink, LinkItem } from "../../models/GlobalElements";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";

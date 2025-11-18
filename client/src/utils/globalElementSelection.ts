@@ -1,6 +1,6 @@
-import { Footer } from "@/models/Footer";
-import { Header } from "@/models/Header";
-import { getGlobalElements } from "@/services/fetchData";
+import { Footer } from "../models/Footer";
+import { Header } from "../models/Header";
+import { getGlobalElements } from "../services/fetchData";
 
 export async function selectData<T extends Header | Footer>(
   element: "header" | "footer"

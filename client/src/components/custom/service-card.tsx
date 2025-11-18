@@ -1,4 +1,4 @@
-import { ServiceCard } from "@/models/HomePage";
+import { ServiceCard } from "../../models/HomePage";
 import { StrapiImage } from "./strapa-image";
 import ButtonCustom from "./cta";
 type ServiceCardCompProps = {

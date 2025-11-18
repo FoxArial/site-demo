@@ -1,4 +1,4 @@
-import { Background, LinkItem, TextLabel } from "@/models/GlobalElements";
+import { Background, LinkItem, TextLabel } from "../../models/GlobalElements";
 import CustomLink from "./customLink";
 import { StrapiImage } from "./strapa-image";
 
