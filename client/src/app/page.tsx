@@ -7,7 +7,7 @@ export default async function HomeRoute() {
   if (!data) return "No data";
   return (
     <div>
-      {data.data.content.map((item: BlockMapProps, index) => {
+      {data.data.content.map((item: BlockMapProps, index: number) => {
         return index > 0 ? (
           <FadeSection key={item.id}>{RenderBlock(item)}</FadeSection>
         ) : (
