@@ -1,0 +1,647 @@
+{
+  "data": {
+    "id": 27,
+    "documentId": "mh3yi4jkx5kbn8hvp85vckts",
+    "createdAt": "2025-10-29T10:48:20.807Z",
+    "updatedAt": "2025-11-18T13:04:18.755Z",
+    "publishedAt": "2025-11-18T13:04:19.179Z",
+    "content": [
+      {
+        "__component": "blocks.first-section",
+        "id": 30,
+        "title": [
+          {
+            "id": 1615,
+            "label": "Your Partner in",
+            "fontWeight": "normal",
+            "color": "white"
+          },
+          {
+            "id": 1616,
+            "label": "Digital Transformation & Growth",
+            "fontWeight": "bold",
+            "color": "white"
+          }
+        ],
+        "cta": [
+          {
+            "id": 152,
+            "href": "/shedule-meetings",
+            "theme": "orange",
+            "isExternal": false,
+            "label": {
+              "id": 1629,
+              "label": "Let`s Schedule Meeting",
+              "fontWeight": "bold",
+              "color": "white"
+            }
+          },
+          {
+            "id": 153,
+            "href": "/portfolio",
+            "theme": "lavender",
+            "isExternal": false,
+            "label": {
+              "id": 1630,
+              "label": "See Our Work",
+              "fontWeight": "normal",
+              "color": "white"
+            }
+          }
+        ],
+        "description": {
+          "id": 140,
+          "fontWeight": "normal",
+          "color": "gray",
+          "label": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type"
+        },
+        "background": {
+          "id": 98,
+          "color": null,
+          "standartColors": "white",
+          "image": {
+            "id": 55,
+            "documentId": "fnjyww3iwk3vebwaad65wevk",
+            "url": "https://res.cloudinary.com/deqyjijkv/image/upload/v1763470206/bg_cc2a24ef0a.jpg"
+          }
+        }
+      },
+      {
+        "__component": "blocks.technologies-section",
+        "id": 26,
+        "title": [
+          {
+            "id": 1617,
+            "label": "We are providing these",
+            "fontWeight": "normal",
+            "color": "darkTeal"
+          },
+          {
+            "id": 1618,
+            "label": "Technologies",
+            "fontWeight": "bold",
+            "color": "darkTeal"
+          }
+        ],
+        "description": {
+          "id": 139,
+          "fontWeight": "normal",
+          "color": "gray",
+          "label": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+        },
+        "technologies": [
+          {
+            "id": 230,
+            "description": {
+              "id": 1636,
+              "label": "React",
+              "fontWeight": "normal",
+              "color": "darkTeal"
+            },
+            "image": {
+              "id": 66,
+              "documentId": "tx0j6q8n40bc25ujyeum81x1",
+              "url": "https://res.cloudinary.com/deqyjijkv/image/upload/v1763470616/React_388b0a7b19.svg"
+            }
+          },
+          {
+            "id": 231,
+            "description": {
+              "id": 1637,
+              "label": "HTML",
+              "fontWeight": "normal",
+              "color": "darkTeal"
+            },
+            "image": {
+              "id": 61,
+              "documentId": "x1gri9b9fzxwjqm85mct8om9",
+              "url": "https://res.cloudinary.com/deqyjijkv/image/upload/v1763470614/HTML_5_f21521f223.svg"
+            }
+          },
+          {
+            "id": 232,
+            "description": {
+              "id": 1638,
+              "label": "CSS",
+              "fontWeight": "normal",
+              "color": "darkTeal"
+            },
+            "image": {
+              "id": 62,
+              "documentId": "l6a0069yxp2d8gfdy4aht8a1",
+              "url": "https://res.cloudinary.com/deqyjijkv/image/upload/v1763470614/CSS_3_6f6905162f.svg"
+            }
+          },
+          {
+            "id": 233,
+            "description": {
+              "id": 1639,
+              "label": "NodeJS",
+              "fontWeight": "normal",
+              "color": "darkTeal"
+            },
+            "image": {
+              "id": 60,
+              "documentId": "ceg24obz7l1tf49ee3c0jr1a",
+              "url": "https://res.cloudinary.com/deqyjijkv/image/upload/v1763470614/js_Icon_Green_17bcb42376.svg"
+            }
+          },
+          {
+            "id": 234,
+            "description": {
+              "id": 1640,
+              "label": "Adobe XD",
+              "fontWeight": "normal",
+              "color": "darkTeal"
+            },
+            "image": {
+              "id": 67,
+              "documentId": "hn1oxs683u94r4nl6zbi0gm7",
+              "url": "https://res.cloudinary.com/deqyjijkv/image/upload/v1763470824/xd_07ce77d650.png"
+            }
+          },
+          {
+            "id": 235,
+            "description": {
+              "id": 1641,
+              "label": "Adobe PS",
+              "fontWeight": "normal",
+              "color": "darkTeal"
+            },
+            "image": {
+              "id": 68,
+              "documentId": "figwyz4by3s75ts3mzqprrjc",
+              "url": "https://res.cloudinary.com/deqyjijkv/image/upload/v1763470824/photoshop_4ade985489.png"
+            }
+          },
+          {
+            "id": 236,
+            "description": {
+              "id": 1642,
+              "label": "Mongo DB",
+              "fontWeight": "normal",
+              "color": "darkTeal"
+            },
+            "image": {
+              "id": 65,
+              "documentId": "uqldrg46s1ie06ikaumt2f6j",
+              "url": "https://res.cloudinary.com/deqyjijkv/image/upload/v1763470614/Mongo_DB_14b5118b43.svg"
+            }
+          },
+          {
+            "id": 237,
+            "description": {
+              "id": 1643,
+              "label": "My SQL",
+              "fontWeight": "normal",
+              "color": "darkTeal"
+            },
+            "image": {
+              "id": 64,
+              "documentId": "qrilenn4jk645dyhwo997t03",
+              "url": "https://res.cloudinary.com/deqyjijkv/image/upload/v1763470614/My_SQL_59883d7065.svg"
+            }
+          },
+          {
+            "id": 238,
+            "description": {
+              "id": 1644,
+              "label": "Figma",
+              "fontWeight": "normal",
+              "color": "darkTeal"
+            },
+            "image": {
+              "id": 63,
+              "documentId": "wj4cufwtgvt1zcv9yo35q2ue",
+              "url": "https://res.cloudinary.com/deqyjijkv/image/upload/v1763470614/Figma_80bcbe1d29.svg"
+            }
+          },
+          {
+            "id": 239,
+            "description": {
+              "id": 1645,
+              "label": "JavaScript",
+              "fontWeight": "normal",
+              "color": "darkTeal"
+            },
+            "image": {
+              "id": 69,
+              "documentId": "eqsx49j603m8x3xdhbh8yus6",
+              "url": "https://res.cloudinary.com/deqyjijkv/image/upload/v1763470927/js_f6da136b0c.png"
+            }
+          },
+          {
+            "id": 240,
+            "description": {
+              "id": 1646,
+              "label": "React",
+              "fontWeight": "normal",
+              "color": "darkTeal"
+            },
+            "image": {
+              "id": 66,
+              "documentId": "tx0j6q8n40bc25ujyeum81x1",
+              "url": "https://res.cloudinary.com/deqyjijkv/image/upload/v1763470616/React_388b0a7b19.svg"
+            }
+          }
+        ]
+      },
+      {
+        "__component": "blocks.services-section",
+        "id": 20,
+        "title": {
+          "id": 1612,
+          "label": "Services",
+          "fontWeight": "bold",
+          "color": "darkTeal"
+        },
+        "description": {
+          "id": 137,
+          "fontWeight": "normal",
+          "color": "gray",
+          "label": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+        },
+        "services": [
+          {
+            "id": 77,
+            "image": {
+              "id": 52,
+              "documentId": "ivcsbdqd1eon3og1wgwanx2y",
+              "url": "https://res.cloudinary.com/deqyjijkv/image/upload/v1763470142/service1_c9cf231536.png"
+            },
+            "title": {
+              "id": 1631,
+              "label": "Website Development",
+              "fontWeight": "bold",
+              "color": "darkTeal"
+            },
+            "description": {
+              "id": 1647,
+              "label": "200+ Happy Clients",
+              "fontWeight": "normal",
+              "color": "spearmint"
+            },
+            "button": {
+              "id": 154,
+              "href": "/service-start",
+              "theme": "peacoat",
+              "isExternal": false,
+              "label": {
+                "id": 1655,
+                "label": "Let`s Started",
+                "fontWeight": "bold",
+                "color": "white"
+              }
+            }
+          },
+          {
+            "id": 78,
+            "image": {
+              "id": 51,
+              "documentId": "japntjuq768e7u7w6bfc3vjz",
+              "url": "https://res.cloudinary.com/deqyjijkv/image/upload/v1763470135/mobile_dev_040c6dc736.png"
+            },
+            "title": {
+              "id": 1632,
+              "label": "Mobile Development",
+              "fontWeight": "bold",
+              "color": "darkTeal"
+            },
+            "description": {
+              "id": 1648,
+              "label": "200+ Happy Clients ",
+              "fontWeight": "normal",
+              "color": "spearmint"
+            },
+            "button": {
+              "id": 155,
+              "href": "/service-start",
+              "theme": "peacoat",
+              "isExternal": false,
+              "label": {
+                "id": 1656,
+                "label": "Let`s Started",
+                "fontWeight": "bold",
+                "color": "white"
+              }
+            }
+          },
+          {
+            "id": 79,
+            "image": {
+              "id": 53,
+              "documentId": "aruz7wfosnygjkljgcmvb7gu",
+              "url": "https://res.cloudinary.com/deqyjijkv/image/upload/v1763470142/ui_ux_mobile_app_design_d5d4726de7.png"
+            },
+            "title": {
+              "id": 1633,
+              "label": "UI/UX Designs",
+              "fontWeight": "bold",
+              "color": "darkTeal"
+            },
+            "description": {
+              "id": 1649,
+              "label": "200+ Happy Clients ",
+              "fontWeight": "normal",
+              "color": "spearmint"
+            },
+            "button": {
+              "id": 156,
+              "href": "/service-start",
+              "theme": "peacoat",
+              "isExternal": false,
+              "label": {
+                "id": 1657,
+                "label": "Let`s Started",
+                "fontWeight": "bold",
+                "color": "white"
+              }
+            }
+          },
+          {
+            "id": 80,
+            "image": {
+              "id": 50,
+              "documentId": "c9cid5tdvnryhdux6ps3cqxt",
+              "url": "https://res.cloudinary.com/deqyjijkv/image/upload/v1763470135/image_1736_79d8c45166_fc92802ed2.png"
+            },
+            "title": {
+              "id": 1634,
+              "label": "Graphic Designs",
+              "fontWeight": "bold",
+              "color": "darkTeal"
+            },
+            "description": {
+              "id": 1650,
+              "label": "200+ Happy Clients ",
+              "fontWeight": "normal",
+              "color": "spearmint"
+            },
+            "button": {
+              "id": 157,
+              "href": "/service-start",
+              "theme": "peacoat",
+              "isExternal": false,
+              "label": {
+                "id": 1658,
+                "label": "Let`s Started",
+                "fontWeight": "bold",
+                "color": "white"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "__component": "blocks.info-section",
+        "id": 17,
+        "card": [
+          {
+            "id": 65,
+            "title": {
+              "id": 1619,
+              "label": "2021",
+              "fontWeight": "bold",
+              "color": "white"
+            },
+            "description": {
+              "id": 1623,
+              "label": "Working From",
+              "fontWeight": "normal",
+              "color": "white"
+            }
+          },
+          {
+            "id": 66,
+            "title": {
+              "id": 1620,
+              "label": "200+",
+              "fontWeight": "bold",
+              "color": "white"
+            },
+            "description": {
+              "id": 1624,
+              "label": "Projects",
+              "fontWeight": "normal",
+              "color": "white"
+            }
+          },
+          {
+            "id": 67,
+            "title": {
+              "id": 1621,
+              "label": "160+",
+              "fontWeight": "bold",
+              "color": "white"
+            },
+            "description": {
+              "id": 1625,
+              "label": "Clients",
+              "fontWeight": "normal",
+              "color": "white"
+            }
+          },
+          {
+            "id": 68,
+            "title": {
+              "id": 1622,
+              "label": "160+",
+              "fontWeight": "bold",
+              "color": "white"
+            },
+            "description": {
+              "id": 1626,
+              "label": "Repeated Clients",
+              "fontWeight": "normal",
+              "color": "white"
+            }
+          }
+        ],
+        "background": {
+          "id": 97,
+          "color": null,
+          "standartColors": "white",
+          "image": {
+            "id": 55,
+            "documentId": "fnjyww3iwk3vebwaad65wevk",
+            "url": "https://res.cloudinary.com/deqyjijkv/image/upload/v1763470206/bg_cc2a24ef0a.jpg"
+          }
+        }
+      },
+      {
+        "__component": "blocks.portfolio-section",
+        "id": 19,
+        "title": {
+          "id": 1613,
+          "label": "Portfolio",
+          "fontWeight": "bold",
+          "color": "darkTeal"
+        },
+        "description": {
+          "id": 138,
+          "fontWeight": "normal",
+          "color": "gray",
+          "label": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+        },
+        "portfolio_categories": [
+          {
+            "id": 2,
+            "documentId": "mhomtskfwnmyenbhootxrjvn",
+            "name": "Website Development",
+            "slug": "web",
+            "order": 1,
+            "createdAt": "2025-11-03T10:44:06.125Z",
+            "updatedAt": "2025-11-03T10:44:06.125Z",
+            "publishedAt": "2025-11-03T10:44:06.143Z"
+          },
+          {
+            "id": 8,
+            "documentId": "a8jkco3yz0adzajbx53koqs0",
+            "name": "Mobile Development",
+            "slug": "mobile",
+            "order": 2,
+            "createdAt": "2025-11-10T15:01:25.664Z",
+            "updatedAt": "2025-11-10T15:02:48.155Z",
+            "publishedAt": "2025-11-10T15:02:48.184Z"
+          }
+        ]
+      },
+      {
+        "__component": "blocks.contact-us-section",
+        "id": 11,
+        "title": {
+          "id": 1614,
+          "label": "Contuct Us",
+          "fontWeight": "normal",
+          "color": "white"
+        },
+        "description": [
+          {
+            "id": 141,
+            "fontWeight": "normal",
+            "color": "gray",
+            "label": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+          },
+          {
+            "id": 142,
+            "fontWeight": "normal",
+            "color": "gray",
+            "label": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's."
+          }
+        ],
+        "background": {
+          "id": 99,
+          "color": null,
+          "standartColors": "white",
+          "image": {
+            "id": 54,
+            "documentId": "vh3513k7p8s4dzghc6loh5de",
+            "url": "https://res.cloudinary.com/deqyjijkv/image/upload/v1763470206/woman_07b2bd8528.webp"
+          }
+        },
+        "form": {
+          "id": 10,
+          "title": [
+            {
+              "id": 1627,
+              "label": "Please provide your",
+              "fontWeight": "normal",
+              "color": "darkTeal"
+            },
+            {
+              "id": 1628,
+              "label": "Information.",
+              "fontWeight": "bold",
+              "color": "darkTeal"
+            }
+          ],
+          "description": {
+            "id": 1635,
+            "label": "Lorem Text",
+            "fontWeight": "normal",
+            "color": "jaffa"
+          },
+          "inputs": [
+            {
+              "id": 33,
+              "type": "text",
+              "label": {
+                "id": 1651,
+                "label": "Name",
+                "fontWeight": "normal",
+                "color": "white"
+              },
+              "placeholder": {
+                "id": 1659,
+                "label": "Name",
+                "fontWeight": "normal",
+                "color": "gray"
+              }
+            },
+            {
+              "id": 34,
+              "type": "email",
+              "label": {
+                "id": 1652,
+                "label": "Email",
+                "fontWeight": "normal",
+                "color": "white"
+              },
+              "placeholder": {
+                "id": 1660,
+                "label": "Email",
+                "fontWeight": "normal",
+                "color": "gray"
+              }
+            },
+            {
+              "id": 35,
+              "type": "tel",
+              "label": {
+                "id": 1653,
+                "label": "Phone",
+                "fontWeight": "normal",
+                "color": "white"
+              },
+              "placeholder": {
+                "id": 1661,
+                "label": "Phone",
+                "fontWeight": "normal",
+                "color": "gray"
+              }
+            },
+            {
+              "id": 36,
+              "type": "text",
+              "label": {
+                "id": 1654,
+                "label": "Message",
+                "fontWeight": "normal",
+                "color": "white"
+              },
+              "placeholder": {
+                "id": 1662,
+                "label": "Message",
+                "fontWeight": "normal",
+                "color": "gray"
+              }
+            }
+          ],
+          "cta": {
+            "id": 158,
+            "href": "/api/contact-infos",
+            "theme": "peacoat",
+            "isExternal": false,
+            "label": {
+              "id": 1663,
+              "label": "Submit",
+              "fontWeight": "bold",
+              "color": "white"
+            }
+          }
+        }
+      }
+    ]
+  },
+  "meta": {}
+}

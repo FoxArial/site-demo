@@ -1,0 +1,609 @@
+{
+  "data": {
+    "id": 16,
+    "documentId": "x0swlj19vb2c9tvg085xwrub",
+    "createdAt": "2025-10-28T09:32:45.074Z",
+    "updatedAt": "2025-11-18T13:05:24.107Z",
+    "publishedAt": "2025-11-18T13:05:24.494Z",
+    "header": {
+      "id": 21,
+      "logo": {
+        "id": 142,
+        "href": "/",
+        "isExternal": false,
+        "label": {
+          "id": 1664,
+          "label": "DevFlavours",
+          "fontWeight": "bold",
+          "color": "white"
+        },
+        "image": null
+      },
+      "navItems": [
+        {
+          "id": 500,
+          "href": "/",
+          "isExternal": false,
+          "label": {
+            "id": 1665,
+            "label": "Home",
+            "fontWeight": "normal",
+            "color": "white"
+          }
+        },
+        {
+          "id": 501,
+          "href": "/about-us",
+          "isExternal": false,
+          "label": {
+            "id": 1666,
+            "label": "About Us",
+            "fontWeight": "normal",
+            "color": "white"
+          }
+        },
+        {
+          "id": 502,
+          "href": "/blogs",
+          "isExternal": false,
+          "label": {
+            "id": 1667,
+            "label": "Blogs",
+            "fontWeight": "normal",
+            "color": "white"
+          }
+        },
+        {
+          "id": 503,
+          "href": "/portfolio",
+          "isExternal": false,
+          "label": {
+            "id": 1668,
+            "label": "Portfolio",
+            "fontWeight": "normal",
+            "color": "white"
+          }
+        }
+      ],
+      "cta": {
+        "id": 159,
+        "href": "/schedule-meeting",
+        "theme": "orange",
+        "isExternal": false,
+        "label": {
+          "id": 1669,
+          "label": "Schedule Meeting",
+          "fontWeight": "bold",
+          "color": "white"
+        }
+      },
+      "background": null
+    },
+    "footer": {
+      "id": 20,
+      "infoColumns": [
+        {
+          "id": 58,
+          "title": {
+            "id": 1670,
+            "label": "Product",
+            "fontWeight": "bold",
+            "color": "darkTeal"
+          },
+          "links": [
+            {
+              "id": 504,
+              "href": "/landing-page",
+              "isExternal": false,
+              "label": {
+                "id": 1674,
+                "label": "Landing Page",
+                "fontWeight": "normal",
+                "color": "darkTeal"
+              }
+            },
+            {
+              "id": 505,
+              "href": "/popup-builder",
+              "isExternal": false,
+              "label": {
+                "id": 1675,
+                "label": "Popup Builder",
+                "fontWeight": "normal",
+                "color": "darkTeal"
+              }
+            },
+            {
+              "id": 506,
+              "href": "/web-design",
+              "isExternal": false,
+              "label": {
+                "id": 1676,
+                "label": "Web-design",
+                "fontWeight": "normal",
+                "color": "darkTeal"
+              }
+            },
+            {
+              "id": 507,
+              "href": "/content",
+              "isExternal": false,
+              "label": {
+                "id": 1677,
+                "label": "Content",
+                "fontWeight": "normal",
+                "color": "darkTeal"
+              }
+            },
+            {
+              "id": 508,
+              "href": "/integrations",
+              "isExternal": false,
+              "label": {
+                "id": 1678,
+                "label": "Integrations",
+                "fontWeight": "normal",
+                "color": "darkTeal"
+              }
+            }
+          ]
+        },
+        {
+          "id": 59,
+          "title": {
+            "id": 1671,
+            "label": "Use Cases",
+            "fontWeight": "bold",
+            "color": "darkTeal"
+          },
+          "links": [
+            {
+              "id": 509,
+              "href": "/web-designers",
+              "isExternal": false,
+              "label": {
+                "id": 1679,
+                "label": "Web-designers",
+                "fontWeight": "normal",
+                "color": "darkTeal"
+              }
+            },
+            {
+              "id": 510,
+              "href": "/marketers",
+              "isExternal": false,
+              "label": {
+                "id": 1680,
+                "label": "Marketers",
+                "fontWeight": "normal",
+                "color": "darkTeal"
+              }
+            },
+            {
+              "id": 511,
+              "href": "/small-business",
+              "isExternal": false,
+              "label": {
+                "id": 1681,
+                "label": "Small Business",
+                "fontWeight": "normal",
+                "color": "darkTeal"
+              }
+            },
+            {
+              "id": 512,
+              "href": "/website-builder",
+              "isExternal": false,
+              "label": {
+                "id": 1682,
+                "label": "Website Builder",
+                "fontWeight": "normal",
+                "color": "darkTeal"
+              }
+            }
+          ]
+        },
+        {
+          "id": 60,
+          "title": {
+            "id": 1672,
+            "label": "Resources",
+            "fontWeight": "bold",
+            "color": "darkTeal"
+          },
+          "links": [
+            {
+              "id": 513,
+              "href": "/academy",
+              "isExternal": false,
+              "label": {
+                "id": 1683,
+                "label": "Academy",
+                "fontWeight": "normal",
+                "color": "darkTeal"
+              }
+            },
+            {
+              "id": 514,
+              "href": "/blog",
+              "isExternal": false,
+              "label": {
+                "id": 1684,
+                "label": "Blog",
+                "fontWeight": "normal",
+                "color": "darkTeal"
+              }
+            },
+            {
+              "id": 515,
+              "href": "/themes",
+              "isExternal": false,
+              "label": {
+                "id": 1685,
+                "label": "Themes",
+                "fontWeight": "normal",
+                "color": "darkTeal"
+              }
+            },
+            {
+              "id": 516,
+              "href": "/hosting",
+              "isExternal": false,
+              "label": {
+                "id": 1686,
+                "label": "Hosting",
+                "fontWeight": "normal",
+                "color": "darkTeal"
+              }
+            },
+            {
+              "id": 517,
+              "href": "/developers",
+              "isExternal": false,
+              "label": {
+                "id": 1687,
+                "label": "Developers",
+                "fontWeight": "normal",
+                "color": "darkTeal"
+              }
+            },
+            {
+              "id": 518,
+              "href": "/support",
+              "isExternal": false,
+              "label": {
+                "id": 1688,
+                "label": "Support",
+                "fontWeight": "normal",
+                "color": "darkTeal"
+              }
+            }
+          ]
+        },
+        {
+          "id": 61,
+          "title": {
+            "id": 1673,
+            "label": "Company",
+            "fontWeight": "bold",
+            "color": "darkTeal"
+          },
+          "links": [
+            {
+              "id": 519,
+              "href": "/about-us",
+              "isExternal": false,
+              "label": {
+                "id": 1689,
+                "label": "About Us",
+                "fontWeight": "normal",
+                "color": "darkTeal"
+              }
+            },
+            {
+              "id": 520,
+              "href": "/careers",
+              "isExternal": false,
+              "label": {
+                "id": 1690,
+                "label": "Careers",
+                "fontWeight": "normal",
+                "color": "darkTeal"
+              }
+            },
+            {
+              "id": 521,
+              "href": "/faqs",
+              "isExternal": false,
+              "label": {
+                "id": 1691,
+                "label": "FAQs",
+                "fontWeight": "normal",
+                "color": "darkTeal"
+              }
+            },
+            {
+              "id": 522,
+              "href": "/teams",
+              "isExternal": false,
+              "label": {
+                "id": 1692,
+                "label": "Teams",
+                "fontWeight": "normal",
+                "color": "darkTeal"
+              }
+            },
+            {
+              "id": 523,
+              "href": "/contact-us",
+              "isExternal": false,
+              "label": {
+                "id": 1693,
+                "label": "Contact Us",
+                "fontWeight": "normal",
+                "color": "darkTeal"
+              }
+            }
+          ]
+        }
+      ],
+      "logo": {
+        "id": 143,
+        "href": "/",
+        "isExternal": false,
+        "label": {
+          "id": 1694,
+          "label": "DevFlavours",
+          "fontWeight": "normal",
+          "color": "darkTeal"
+        },
+        "image": null
+      },
+      "description": {
+        "id": 1695,
+        "label": "Follow us",
+        "fontWeight": "bold",
+        "color": "darkTeal"
+      },
+      "socialLogos": [
+        {
+          "id": 144,
+          "href": "https://www.upwork.com/",
+          "isExternal": true,
+          "label": {
+            "id": 1696,
+            "label": "UpWork",
+            "fontWeight": "normal",
+            "color": "white"
+          },
+          "image": {
+            "id": 59,
+            "documentId": "yydzozs7cjvrpvd5uy5k662s",
+            "name": "upwork.svg",
+            "alternativeText": null,
+            "caption": null,
+            "width": 800,
+            "height": 800,
+            "formats": null,
+            "hash": "upwork_40c0a8a208",
+            "ext": ".svg",
+            "mime": "image/svg+xml",
+            "size": 0.84,
+            "url": "https://res.cloudinary.com/deqyjijkv/image/upload/v1763470575/upwork_40c0a8a208.svg",
+            "previewUrl": null,
+            "provider": "cloudinary",
+            "provider_metadata": {
+              "public_id": "upwork_40c0a8a208",
+              "resource_type": "image"
+            },
+            "createdAt": "2025-11-18T12:56:17.605Z",
+            "updatedAt": "2025-11-18T12:56:17.605Z",
+            "publishedAt": "2025-11-18T12:56:17.605Z"
+          }
+        },
+        {
+          "id": 145,
+          "href": "https://github.com/",
+          "isExternal": true,
+          "label": {
+            "id": 1697,
+            "label": "GitHub",
+            "fontWeight": "normal",
+            "color": "white"
+          },
+          "image": {
+            "id": 56,
+            "documentId": "tfkk0pwndhzdhs6hyz05ewah",
+            "name": "github.png",
+            "alternativeText": null,
+            "caption": null,
+            "width": 512,
+            "height": 512,
+            "formats": {
+              "small": {
+                "name": "small_github.png",
+                "hash": "small_github_60061a3b1b",
+                "ext": ".png",
+                "mime": "image/png",
+                "path": null,
+                "width": 500,
+                "height": 500,
+                "size": 21.14,
+                "sizeInBytes": 21140,
+                "url": "https://res.cloudinary.com/deqyjijkv/image/upload/v1763470575/small_github_60061a3b1b.png",
+                "provider_metadata": {
+                  "public_id": "small_github_60061a3b1b",
+                  "resource_type": "image"
+                }
+              },
+              "thumbnail": {
+                "name": "thumbnail_github.png",
+                "hash": "thumbnail_github_60061a3b1b",
+                "ext": ".png",
+                "mime": "image/png",
+                "path": null,
+                "width": 156,
+                "height": 156,
+                "size": 5.48,
+                "sizeInBytes": 5484,
+                "url": "https://res.cloudinary.com/deqyjijkv/image/upload/v1763470575/thumbnail_github_60061a3b1b.png",
+                "provider_metadata": {
+                  "public_id": "thumbnail_github_60061a3b1b",
+                  "resource_type": "image"
+                }
+              }
+            },
+            "hash": "github_60061a3b1b",
+            "ext": ".png",
+            "mime": "image/png",
+            "size": 5.65,
+            "url": "https://res.cloudinary.com/deqyjijkv/image/upload/v1763470575/github_60061a3b1b.png",
+            "previewUrl": null,
+            "provider": "cloudinary",
+            "provider_metadata": {
+              "public_id": "github_60061a3b1b",
+              "resource_type": "image"
+            },
+            "createdAt": "2025-11-18T12:56:16.813Z",
+            "updatedAt": "2025-11-18T12:56:16.813Z",
+            "publishedAt": "2025-11-18T12:56:16.813Z"
+          }
+        },
+        {
+          "id": 146,
+          "href": "https://www.linkedin.com",
+          "isExternal": true,
+          "label": {
+            "id": 1698,
+            "label": "LinkedIn",
+            "fontWeight": "normal",
+            "color": "white"
+          },
+          "image": {
+            "id": 57,
+            "documentId": "v66ilj3sjjeutbngnvslorkl",
+            "name": "linkedin.svg",
+            "alternativeText": null,
+            "caption": null,
+            "width": 800,
+            "height": 800,
+            "formats": null,
+            "hash": "linkedin_a105522c8a",
+            "ext": ".svg",
+            "mime": "image/svg+xml",
+            "size": 1.32,
+            "url": "https://res.cloudinary.com/deqyjijkv/image/upload/v1763470575/linkedin_a105522c8a.svg",
+            "previewUrl": null,
+            "provider": "cloudinary",
+            "provider_metadata": {
+              "public_id": "linkedin_a105522c8a",
+              "resource_type": "image"
+            },
+            "createdAt": "2025-11-18T12:56:17.148Z",
+            "updatedAt": "2025-11-18T12:56:17.148Z",
+            "publishedAt": "2025-11-18T12:56:17.148Z"
+          }
+        },
+        {
+          "id": 147,
+          "href": "mailto:mail-us",
+          "isExternal": true,
+          "label": {
+            "id": 1699,
+            "label": "Mail",
+            "fontWeight": "normal",
+            "color": "white"
+          },
+          "image": {
+            "id": 58,
+            "documentId": "x8em6z2cw4t9403wbewk17d9",
+            "name": "mail.svg",
+            "alternativeText": null,
+            "caption": null,
+            "width": 800,
+            "height": 800,
+            "formats": null,
+            "hash": "mail_e475dd2d3f",
+            "ext": ".svg",
+            "mime": "image/svg+xml",
+            "size": 1.33,
+            "url": "https://res.cloudinary.com/deqyjijkv/image/upload/v1763470575/mail_e475dd2d3f.svg",
+            "previewUrl": null,
+            "provider": "cloudinary",
+            "provider_metadata": {
+              "public_id": "mail_e475dd2d3f",
+              "resource_type": "image"
+            },
+            "createdAt": "2025-11-18T12:56:17.495Z",
+            "updatedAt": "2025-11-18T12:56:17.495Z",
+            "publishedAt": "2025-11-18T12:56:17.495Z"
+          }
+        }
+      ],
+      "links": [
+        {
+          "id": 524,
+          "href": "/privacy-policy",
+          "isExternal": false,
+          "label": {
+            "id": 1700,
+            "label": "Privace Policy",
+            "fontWeight": "normal",
+            "color": "gray"
+          }
+        },
+        {
+          "id": 525,
+          "href": "/terms-of-use",
+          "isExternal": false,
+          "label": {
+            "id": 1701,
+            "label": "Terms of Use",
+            "fontWeight": "normal",
+            "color": "gray"
+          }
+        },
+        {
+          "id": 526,
+          "href": "/sales-and-refund",
+          "isExternal": false,
+          "label": {
+            "id": 1702,
+            "label": "Sales and Refund",
+            "fontWeight": "normal",
+            "color": "gray"
+          }
+        },
+        {
+          "id": 527,
+          "href": "/legal",
+          "isExternal": false,
+          "label": {
+            "id": 1703,
+            "label": "Legal",
+            "fontWeight": "normal",
+            "color": "gray"
+          }
+        },
+        {
+          "id": 528,
+          "href": "/site-map",
+          "isExternal": false,
+          "label": {
+            "id": 1704,
+            "label": "Site Map",
+            "fontWeight": "normal",
+            "color": "gray"
+          }
+        }
+      ],
+      "text": {
+        "id": 1705,
+        "label": "© 2021 All Rights Reserved",
+        "fontWeight": "normal",
+        "color": "darkTeal"
+      }
+    }
+  },
+  "meta": {}
+}
