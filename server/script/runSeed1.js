@@ -1,8 +1,11 @@
-const strapi = require("@strapi/strapi");
+const { createStrapi } = require("@strapi/strapi");
 
 async function main() {
-  const app = await strapi().load();
+  const app = await createStrapi();
+  await app.start();
+
   await require("./seed")({ strapi: app });
+
   await app.destroy();
 }
 
