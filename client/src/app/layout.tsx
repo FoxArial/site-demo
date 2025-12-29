@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "../styles/main.scss";
-import HeaderElement from "../components/FooterElement";
+import HeaderElement from "../components/HeaderElement";
 import FooterElement from "../components/FooterElement";
 
 const poppins = Poppins({
