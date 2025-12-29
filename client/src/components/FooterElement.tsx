@@ -61,7 +61,7 @@ export default async function FooterElement() {
                       {element.image && (
                         <StrapiImage
                           src={element.image?.url}
-                          alt={element.label.label}
+                          alt={element.label?.label}
                           width={25}
                           height={25}
                         />
